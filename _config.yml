@@ -1,6 +1,8 @@
-title: Jere's personal web
+title: 
 logo: /assets/img/ja.jpeg
 description: This is a photo of me taken with a Chaika 2 camera
 show_downloads: false
 google_analytics:
 theme: jekyll-theme-minimal
+livereload: true
+github.is_project_page: https://www.github.com/jere357
