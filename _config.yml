@@ -5,4 +5,7 @@ show_downloads: false
 google_analytics:
 theme: jekyll-theme-minimal
 livereload: true
-github.is_project_page: https://www.github.com/jere357
+diplay_github: true
+github_url: https://www.github.com/jere357
+display_huggingface: true
+huggingface_url: https://www.huggingface.co/Cropinky

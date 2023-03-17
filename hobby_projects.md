@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## University projects
+## Hobby projects
 
 alo ekipa 
 _moji projektici hihi_

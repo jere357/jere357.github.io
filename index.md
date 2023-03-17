@@ -2,14 +2,17 @@
 layout: default
 ---
 
-
 ### Bio
-Hello there, I am Jeronim Matjiević and I'm a Graduate student at the Faculty of Electrical Engineering and Computing, Zagreb currently enrolled in the Computer Science MSc programme. Passionate about neural networks for all purposes, with years of experience in training models for various tasks. Generally I find models linking the gap between natural language processing and computer vision fascinating. MLOps is also something i find very interesting
+Hello there, I am Jeronim Matijević and I'm a Graduate student at the Faculty of Electrical Engineering and Computing, Zagreb currently enrolled in the Computer Science MSc programme. Passionate about neural networks for all purposes.
+
+Generally I find models linking the gap between natural language processing and computer vision fascinating. 
+
+MLOps is also something i find very interesting
 
 * * *
 
 
-### Fields of interest:
+### Fields of interest
 
 * computer vision in general
 * generative models
@@ -18,10 +21,10 @@ Hello there, I am Jeronim Matjiević and I'm a Graduate student at the Faculty o
 
 * * *
 
-### CV:
-The reason why i created this website was that I felt like all the projects I have listed in my cv bloat it too much and people would just skip it all and not read anything
+### CV
+I created this website because all the projects listed in my CV were bloating it too much, and I felt that people would skip over it without reading anything.
 
-[CV link](./Jeronim_Matijevic_cv.pdf)
+[CV link](./assets/cv/Jeronim_Matijevic_cv.pdf)
 
 * * *
 
@@ -40,7 +43,7 @@ I have divided my projects into ones i have done during for my education and one
 - To own a small boat
 - Make this website with the aesthetic such as these:
   - [Vaisko](https://www.vaisko.com)
-  - [simle.rip](https://smile.rip/)
+  - [smile.rip](https://smile.rip/)
 
 
 

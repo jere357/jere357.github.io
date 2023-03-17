@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
+    <title>
+      Jere's web
+    </title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,9 +30,23 @@
         <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
         {% endif %}
 
-        {% if site.github.is_user_page %}
-        <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
+        {% if site.diplay_github %}
+        <p class="view">
+          <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="20" height="20" style="vertical-align: middle;">
+          <a href="{{ site.github_url}}" style="vertical-align: middle;">Github Profile</a></p>
         {% endif %}
+
+        {% if site.display_huggingface %}
+        <p class="view">
+          <img src="https://huggingface.co/favicon.ico" width="20" height="20" style="vertical-align: middle;">
+          <a href="{{ site.huggingface_url}}" style="vertical-align: middle;">Huggingface Profile</a></p>
+        {% endif %}
+        <p class="view">
+          <img src="/assets/img/mail_icon.png" width="20" height="20" style="vertical-align: middle;">
+          <a href=mailto:"jeronim96@gmail.com">jeronim96@gmail.com</a>
+        </p>
+        </p>
+      
 
         {% if site.show_downloads %}
         <ul class="downloads">
