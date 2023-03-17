@@ -2,8 +2,8 @@
 layout: default
 ---
 
-### Bio
-Hello there, I am Jeronim Matijević and I'm a Graduate student at the Faculty of Electrical Engineering and Computing, Zagreb currently enrolled in the Computer Science MSc programme. Passionate about neural networks for all purposes.
+### Hello there, I am Jeronim Matijević
+I'm a Graduate student at the Faculty of Electrical Engineering and Computing, Zagreb currently enrolled in the Computer Science MSc programme. Passionate about neural networks for all purposes.
 
 Generally I find models linking the gap between natural language processing and computer vision fascinating. 
 
@@ -37,6 +37,12 @@ I have divided my projects into ones i have done during for my education and one
 * [Short overview of my Deep Learning university projects](./university_projects.html).
 
 * * * 
+
+### Interesting computer vision material:
+
+
+
+* * *
 
 ### Life Goals:
 - Make it through my entire life without ever making a linkedin profile
