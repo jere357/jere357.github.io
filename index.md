@@ -5,7 +5,7 @@ layout: default
 ## Hello there, I am Jeronim Matijević
 I'm a Graduate student at the Faculty of Electrical Engineering and Computing, Zagreb currently enrolled in the Computer Science MSc programme. Passionate about neural networks for all purposes.
 
-The reason why I created this webiste is because all the projects listed in my CV were bloating it too much, and I felt that people would skip over it without reading anything.
+The reason why I created this webiste is because all the projects listed in my CV were bloating it too much, and I felt that people would skip over it without reading anything. + ngl i always wanted to have a tumblr so i guess this is something like it
 
 Generally I find models linking the gap between natural language processing and computer vision fascinating. 
 
@@ -43,6 +43,9 @@ I have divided my projects into ones i have done during for my education and one
 - [Letitia making youtube videos about ML papers](https://www.youtube.com/@AICoffeeBreak/videos)
 - [Yannic making youtube videos about ML papers](https://www.youtube.com/@YannicKilcher/videos)
 - [Károly making youtube videos about ML papers](https://www.youtube.com/@TwoMinutePapers/videos)
+- [Zero to Hero Karpathy videos](https://karpathy.ai/zero-to-hero.html)
+- [Funny loss functions blog](https://lossfunctions.tumblr.com/)
+- [very important research](https://oneweirdkerneltrick.com/)
 
 * * *
 
