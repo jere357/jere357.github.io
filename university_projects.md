@@ -12,7 +12,7 @@ In this document, I showcase several deep learning projects that I completed dur
 My BSc thesis. I located people in a single image using the tinyface detector (it was clearly the best of all methods we observed (at that time)) and then devel-
 oped an algorithm that created trajectories and followed/counted people from frame to frame in a video. Thanks to Nikola Banić for his guidance while i was working on this.
 
-[Youtube demo I uploaded in communication with Nikola](https://www.youtube.com/watch?v=XzzDttREG-o)
+* [Youtube demo I uploaded in communication with Nikola](https://www.youtube.com/watch?v=XzzDttREG-o)
 
 ## Music genre classification from lyrics
 
@@ -20,6 +20,7 @@ We had a dataset composed of 250k song lyrics and their respective genres. The p
 from the top 10 ranked words in the song, and then finding the best classification algorithm. To no one’s surprise, it was XGBoost
 
 * [Project report](https://www.fer.unizg.hr/_download/repository/TAR-2019-ProjectReports.pdf#section*.15)
+* [MetroLyrics dataset](https://www.kaggle.com/code/sajithdherath/starter-380-000-lyrics-from-24ddf566-9/notebook)
 
 ## Pix2pixGAN for generating facial expressions
 We trained a pix2pix GAN. The dataset had neutral facial expression image, an image with some emotion,
@@ -27,14 +28,14 @@ and the corresponding emotion vector, the results were surprisingly good. Networ
 encoded in a vector output: face image with drawn emotion
 
 * [Project report (in Croatian)](https://drive.google.com/file/d/1R-Hhop7eXfG4Eu4uMDlqt0fVyCT2dNHp/view)
-* [dataset](https://paperswithcode.com/dataset/ck)
+* [CK+ dataset](https://paperswithcode.com/dataset/ck)
 
 
 ## Retinal fluid segmentation using 2D U-net
 This was done as my graduate project, the dataset I had was the same one used in the Retouch Challenge. Experimented with different/new
 loss functions and observed how the end result changes with respect to the loss function with interesting results
 
-[dataset](https://retouch.grand-challenge.org/)
+* [Retouch Challenge website](https://retouch.grand-challenge.org/)
 
 ## Using ESRGAN for achieving superresolution
 
