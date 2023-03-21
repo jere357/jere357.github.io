@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>
+      Jere's web
+    </title>
+    <link rel="icon" type="image/x-icon" href="/assets/img/pinky.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Figure 1. Jeronim chilling in an unusual caffe bar at the Nürnberg castle. This photo was taken with a Chaika 2 camera." />
+<meta property="og:description" content="Figure 1. Jeronim chilling in an unusual caffe bar at the Nürnberg castle. This photo was taken with a Chaika 2 camera." />
+<link rel="canonical" href="http://localhost:4000/logt.html" />
+<meta property="og:url" content="http://localhost:4000/logt.html" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Figure 1. Jeronim chilling in an unusual caffe bar at the Nürnberg castle. This photo was taken with a Chaika 2 camera.","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/ja.jpeg"}},"url":"http://localhost:4000/logt.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        
+          <img src="/assets/img/ja.jpeg" alt="Logo" />
+        
+
+        <p><b>Figure 1.</b> Jeronim chilling in an unusual caffe bar at the Nürnberg castle. This photo was taken with a Chaika 2 camera.</p>
+
+        
+        
+        <p class="view">
+          <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="17" height="17" style="vertical-align: middle;">
+          <a href="https://www.github.com/jere357" style="vertical-align: middle;">Github Profile</a></p>
+        
+
+        
+        <p class="view">
+          <img src="https://huggingface.co/favicon.ico" width="17" height="17" style="vertical-align: middle;">
+          <a href="https://www.huggingface.co/Cropinky" style="vertical-align: middle;">Huggingface Profile</a></p>
+        
+        <p class="view">
+          <img src="/assets/img/mail_icon.png" width="17" height="17" style="vertical-align: middle;">
+          <a href=mailto:"jeronim96@gmail.com">jeronim96@gmail.com</a>
+        </p>
+        <p class="view">
+          <img src="/assets/img/cv.png" width="17" height="17" style="vertical-align: middle;">
+          <a href="/assets/cv/Jeronim_Matijevic_cv.pdf" style="vertical-align: middle;">My CV</a></p>
+        </p>
+
+        
+      </header>
+      <section>
+
+      <p><a href="./research.html">Research</a></p>
+<h1 id="line-over-ground-truth-loss">Line Over Ground Truth loss</h1>
+
+<p>For the past 6 months, I have worked on shelf detection as my task on this project. In our case, the main goal of shelf detection in their pipeline is to determine the ordinal number of the shelf on which the product is placed on (most bottom shelf (first), middle shelf (second), …). We have tried to apply some traditional computer vision methods to this problem but none of them proved to be robust enough to be used in an “in-the-wild” environment such as a store. Exact and precise localization of the shelf bounding boxes wasn’t necessary.</p>
+
+<p><img src="./assets/img/mapbad.png" alt="" />
+<em>Image where mAP says these predictions are bad (beacuse of it being based on IoU) but in our very specific case of shelf detection/numeration the predicted bounding boxes work just fine.</em></p>
+
+<p>I have proposed a new LoGT [1] evaluation metric. LoGT represents the predicted bounding box as a line that is going through the middle of that bbox. If that line crosses the ground truth bounding box I declare the loss to be 0 otherwise, it’s 1. Keep in mind this is purely an evaluation metric and training is still done using CIoU (me and my colleague tried to formulate our training loss but cIoU was simply better than anything we came up with :) ). This being a very simple 1-class object detection problem where even the simplest yolov network configuration achieves great results but requires a “large” amount of parameters. Using my previously proposed metric I managed to prune the memory footprint from 1.4m parameters (yolov5n, the smallest config you can find on the ultralytics yolov5 github repo) to a tiny yolov5femto/yolov5pico models of 30k/150k parameters, with the same FPN based architecture but significantly fewer filters in every convolutional layer, achieving nearly the same results on their in-house shelf detection dataset.</p>
+
+<p>I feel like this kind of deep learning research can go two ways, one is trying to reduce the complexity while achieving similar results which I have already done; the other is increasing network complexity while trying to achieve better results. I have recently begun work on a new method of object detection in general which will attempt to improve the results of basic RGB object detection models but at the cost of more parameters. I propose that instead of using only RGB images as inputs to object detection network, I would like to construct additional channel features so that images can become something even more than just 3 channels. I believe that this idea can lay ground for some very exciting computer vision research. Some of “channel features” I think are worth testing out:</p>
+
+
+      </section>
+      <footer>
+        
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+  </body>
+</html>

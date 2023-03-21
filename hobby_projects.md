@@ -2,11 +2,14 @@
 layout: default
 ---
 
+[Home](./)
 # Hobby projects
+
+In this document, I showcase several deep learning projects that I made in my free time, 2 of them were parts of huggingface sprints which are awesome events i suggest you to check them out
 
 ## World of Warcraft fishing bot
 
-This was a project I made for fun, I wanted to make a world of warcraft fishing bot using computer vision. The version that used openCV for detecting the fishing bobber didn't work very reliably. So I created a small dataset of 150ish (probably way too many) labeled pictures and trained the yolov3 network to detect it. The results were much better than standard computer vision algorithms for object detection. 
+This was a project I made for fun, I wanted to make a world of warcraft fishing bot using computer vision. The version that used openCV for detecting the fishing bobber didn't work very reliably. So I created a small dataset of 150ish (probably way too many) labeled pictures and trained the yolov3 network to detect it. The results were much better than standard computer vision algorithms for object detection.
 
 * [youtube demo](https://youtu.be/iax2S7DT20w)
 * [github repo](https://github.com/jere357/fishermansfriend)

@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
+    <title>
+      Jere's web
+    </title>
+    <link rel="icon" type="image/x-icon" href="/assets/img/pinky.png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Jere’s personal web | This is a photo of me taken with a Chaika 2 camera</title>
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="Jere’s personal web" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="This is a photo of me taken with a Chaika 2 camera" />
-<meta property="og:description" content="This is a photo of me taken with a Chaika 2 camera" />
+<meta name="description" content="Figure 1. Jeronim chilling in an unusual caffe bar at the Nürnberg castle. This photo was taken with a Chaika 2 camera." />
+<meta property="og:description" content="Figure 1. Jeronim chilling in an unusual caffe bar at the Nürnberg castle. This photo was taken with a Chaika 2 camera." />
 <link rel="canonical" href="http://localhost:4000/university_projects.html" />
 <meta property="og:url" content="http://localhost:4000/university_projects.html" />
-<meta property="og:site_name" content="Jere’s personal web" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Jere’s personal web" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"<b>Figure 1.</b> Jeronim chilling in an unusual caffe bar in the Nurnberg castle. This photo was taken with a Chaika 2 camera","headline":"Jere’s personal web","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/ja.jpeg"}},"url":"http://localhost:4000/university_projects.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"Figure 1. Jeronim chilling in an unusual caffe bar at the Nürnberg castle. This photo was taken with a Chaika 2 camera.","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/ja.jpeg"}},"url":"http://localhost:4000/university_projects.html"}</script>
 <!-- End Jekyll SEO tag -->
 
     <link rel="stylesheet" href="/assets/css/style.css?v=">
@@ -41,28 +41,78 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1><a href="http://localhost:4000/">Jere's personal web</a></h1>
-
         
           <img src="/assets/img/ja.jpeg" alt="Logo" />
         
 
-        <p><b>Figure 1.</b> Jeronim chilling in an unusual caffe bar in the Nürnberg castle. This photo was taken with a Chaika 2 camera</p>
+        <p><b>Figure 1.</b> Jeronim chilling in an unusual caffe bar at the Nürnberg castle. This photo was taken with a Chaika 2 camera.</p>
 
+        
+        
+        <p class="view">
+          <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="17" height="17" style="vertical-align: middle;">
+          <a href="https://www.github.com/jere357" style="vertical-align: middle;">Github Profile</a></p>
         
 
         
+        <p class="view">
+          <img src="https://huggingface.co/favicon.ico" width="17" height="17" style="vertical-align: middle;">
+          <a href="https://www.huggingface.co/Cropinky" style="vertical-align: middle;">Huggingface Profile</a></p>
+        
+        <p class="view">
+          <img src="/assets/img/mail_icon.png" width="17" height="17" style="vertical-align: middle;">
+          <a href=mailto:"jeronim96@gmail.com">jeronim96@gmail.com</a>
+        </p>
+        <p class="view">
+          <img src="/assets/img/cv.png" width="17" height="17" style="vertical-align: middle;">
+          <a href="/assets/cv/Jeronim_Matijevic_cv.pdf" style="vertical-align: middle;">My CV</a></p>
+        </p>
 
         
       </header>
       <section>
 
-      <h2 id="welcome-to-another-page">Welcome to another page</h2>
+      <p><a href="./">Home</a></p>
 
-<p>alo ekipa 
-<em>moji projektici hihi</em></p>
+<h1 id="university-projects-w-deep-learning">University projects w/ deep learning</h1>
 
-<p><a href="./">back</a></p>
+<p>In this document, I showcase several deep learning projects that I completed during my time as a university student. These projects cover a variety of applications in natural language processing, computer vision, and generative modeling.</p>
+
+<h2 id="method-for-people-counting-from-image-sequence">Method for People Counting From Image Sequence</h2>
+<p>My BSc thesis. I located people in a single image using the tinyface detector (it was clearly the best of all methods we observed (at that time)) and then devel-
+oped an algorithm that created trajectories and followed/counted people from frame to frame in a video. Thanks to Nikola Banić for his guidance while i was working on this.</p>
+
+<p><a href="https://www.youtube.com/watch?v=XzzDttREG-o">Youtube demo I uploaded in communication with Nikola</a></p>
+
+<h2 id="music-genre-classification-from-lyrics">Music genre classification from lyrics</h2>
+
+<p>We had a dataset composed of 250k song lyrics and their respective genres. The part I worked on was creating a tfidf weighted fasttext vector
+from the top 10 ranked words in the song, and then finding the best classification algorithm. To no one’s surprise, it was XGBoost</p>
+
+<ul>
+  <li><a href="https://www.fer.unizg.hr/_download/repository/TAR-2019-ProjectReports.pdf#section*.15">Project report</a></li>
+</ul>
+
+<h2 id="pix2pixgan-for-generating-facial-expressions">Pix2pixGAN for generating facial expressions</h2>
+<p>We trained a pix2pix GAN. The dataset had neutral facial expression image, an image with some emotion,
+and the corresponding emotion vector, the results were surprisingly good. Network inputs were: face image with neutral expression + emotion
+encoded in a vector output: face image with drawn emotion</p>
+
+<ul>
+  <li><a href="https://drive.google.com/file/d/1R-Hhop7eXfG4Eu4uMDlqt0fVyCT2dNHp/view">Project report (in Croatian)</a></li>
+  <li><a href="https://paperswithcode.com/dataset/ck">dataset</a></li>
+</ul>
+
+<h2 id="retinal-fluid-segmentation-using-2d-u-net">Retinal fluid segmentation using 2D U-net</h2>
+<p>This was done as my graduate project, the dataset I had was the same one used in the Retouch Challenge. Experimented with different/new
+loss functions and observed how the end result changes with respect to the loss function with interesting results</p>
+
+<p><a href="https://retouch.grand-challenge.org/">dataset</a></p>
+
+<h2 id="using-esrgan-for-achieving-superresolution">Using ESRGAN for achieving superresolution</h2>
+
+<p>A seminar on  GANs and how they could be used for superresolution in images, and various difficulties the traditional approach had in achieving
+superresolution. I’m a big fan of how GANs work for superresolution.</p>
 
 
       </section>
