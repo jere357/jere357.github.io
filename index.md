@@ -58,6 +58,7 @@ I have divided my projects into ones i have done during for my education and one
 - [Vaisko](https://www.vaisko.com)
 - [Smile.rip](https://smile.rip/)
 - [marulianus.hr](www.marulianus.hr)
+- [Auralnauts](https://youtu.be/WSCm8yAxBr8)
 
 
 ### Life Goals
