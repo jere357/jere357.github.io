@@ -53,10 +53,11 @@ I have divided my projects into ones i have done during for my education and one
 * * *
 
 ### Cool things on the internet
-- [Vaisko](https://www.vaisko.com)
-- [Smile.rip](https://smile.rip/)
 - [Watchmeforever AI generated TV show](https://twitch.tv/watchmeforever)
 - [DAN adversarial attacks on chatGPT](https://gist.github.com/coolaj86/6f4f7b30129b0251f61fa7baaa881516) - idk what the hell is going on here
+- [Vaisko](https://www.vaisko.com)
+- [Smile.rip](https://smile.rip/)
+- [marulianus.hr](www.marulianus.hr)
 
 
 ### Life Goals
