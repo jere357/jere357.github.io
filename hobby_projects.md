@@ -2,11 +2,14 @@
 layout: default
 ---
 
+[Home](./)
 # Hobby projects
+
+In this document, I showcase several projects that I made in my free time, 2 of them were parts of huggingface sprints which are awesome events i suggest you to check them out
 
 ## World of Warcraft fishing bot
 
-This was a project I made for fun, I wanted to make a world of warcraft fishing bot using computer vision. The version that used openCV for detecting the fishing bobber didn't work very reliably. So I created a small dataset of 150ish (probably way too many) labeled pictures and trained the yolov3 network to detect it. The results were much better than standard computer vision algorithms for object detection. 
+This was a project I made for fun, I wanted to make a world of warcraft fishing bot using computer vision. The version that used openCV for detecting the fishing bobber didn't work very reliably. So I created a small dataset of 150ish (probably way too many) labeled pictures and trained the yolov3 network to detect it. The results were much better than standard computer vision algorithms for object detection.
 
 * [youtube demo](https://youtu.be/iax2S7DT20w)
 * [github repo](https://github.com/jere357/fishermansfriend)
@@ -17,6 +20,11 @@ This project was done for the huggan huggingface event. I used the wikiart datas
 * [huggingface space demo](https://huggingface.co/spaces/huggan/projected_gan_art)
 * [Instagram link where you can see some of her work](https://www.instagram.com/hanaqhanak)
 
+## Hosting a minecraft server on oboslete hardware that was collecting dust at our department
+My colleague and me had a brilliant idea of hosting a minecraft server on some old PCs we had at our lab. They were some 10+ years old PCs with some old intel quad core processors and 8 GB of DDR2/800 MHz RAM. we slapped arch on that bad boy and hosted the server. We have added the minecraft server startup service to systemd; all of this was very easy thanks to the good people at the AUR. Because this old PC we just connected to our intranet wasn't visible from the outside we both started developing our proxy solutions with nginx. You are welcome to join us by connecting to the server at zver2.zesoi.fer.hr:25565 or zver3.zesoi.fer.hr, say hi :)
+* [Arch user repository](https://aur.archlinux.org/)
+
+
 ## Fine-tuning english GPT-2 for rap lyric generation
 This project was done during for the huggingface jax flax community week workshop. I scraped genius.com using their API to create the dataset
 we used. Model training was done on a v3 TPU on google cloud which was provided to us as a part of the workshop. The results were ok it was
@@ -24,6 +32,3 @@ interesting to see how it captured the usual theme of the rapper’s songs (e.g.
 
 * [huggingface space demo](https://huggingface.co/spaces/Cropinky/gpt2-rap-songs)
 
-
-
-[back](./)
