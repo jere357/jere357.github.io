@@ -16,8 +16,10 @@ Some of "channel features" I think are worth testing out:
 
 2.  Applying the Fourier transform to images to construct potentially powerful channel features. As part of my research, I have also read several papers that use NeRFs. Inspired by the way Mildenhall et al. use positional encoding in chapter 5.1 in the [NeRF paper](https://arxiv.org/abs/2003.08934) I would like to try out a similar approach - but for object detection.
 
-3.    Canny edge feature RGB->RGBC, applying the canny edge algorithm on an image and using that grayscale image as a feature, this is my least favorite feature of the 4 but I think it still has enough potential to warrant experiments.
+3.    Canny edge feature RGB->RGBC, applying the canny edge algorithm on an image and using that grayscale image as a feature, this is my least favorite featureof the 4, because of the way CNNs work, but I think it still has enough potential to warrant experiments.
 
 4.    Sobel features - maybe something interesting could be achieved by applying a sobel operator to the input image - also can be a learnable parameter if it seems like something worth exploring
+
+One of my colleagues suggested a different approach where you take features from say the middle of the depth estimation network and concat those features to the features extracted from the rgb image. This is also something i consider worth exploring
 
 I feel like a similar approach is being done by Zhang et al. in the [ControlNet](https://arxiv.org/pdf/2302.05543.pdf) paper the way they kinda nudge the network towards what they want it to do - i think same results could be achieved in object detection networks as well
