@@ -43,6 +43,7 @@ for line in P:
 Consider an example like this: green are the ground truth bounding boxes, and red are your predicitons. They are indexed with numbers so it's more intuitive to follow the rows and columns.
 ![shelves](./assets/img/logt_demo1.png)
 
+The above written pseudocode will behave like this
 
 ![videozi](./assets/img/manimgodx.gif)
 *This gif visually emulates how the algorithm behaves*
