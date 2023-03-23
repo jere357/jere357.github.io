@@ -52,16 +52,18 @@ I have divided my projects into ones i have done during for my education and one
 
 * * *
 
-### Cool things on the internet
+### Cool/funny things on the internet
 - [Watchmeforever AI generated TV show](https://twitch.tv/watchmeforever)
-- [DAN adversarial attacks on chatGPT](https://gist.github.com/coolaj86/6f4f7b30129b0251f61fa7baaa881516) - idk wtf
+- [DAN adversarial attacks on chatGPT](https://gist.github.com/coolaj86/6f4f7b30129b0251f61fa7baaa881516)
+- [manim](https://www.manim.community/) - very cool library for math visualization, used by 3blue1brown
 - [ezyang blog](http://blog.ezyang.com/)
 - [jspaint](https://jspaint.app)
 - [Vaisko](https://www.vaisko.com)
-- [Smile.rip](https://smile.rip/)
+- [Smile.rip](https://smile.rip/) 
 - [marulianus.hr](www.marulianus.hr)
 - [Auralnauts](https://youtu.be/WSCm8yAxBr8)
-
+- [Seppo Linnainmaa wikipedia page](https://en.wikipedia.org/wiki/Seppo_Linnainmaa) - this guy implemented backprop in fortran in 1970 as his msc thesis
+- [Have you tried using ffmpeg?](https://youtu.be/9kaIXkImCAM)
 
 ### Life Goals
 - Make it through my entire life without ever making a linkedin profile

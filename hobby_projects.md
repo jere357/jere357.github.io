@@ -21,14 +21,14 @@ This project was done for the huggan huggingface event. I used the wikiart datas
 * [Instagram link where you can see some of her work](https://www.instagram.com/hanaqhanak)
 
 ## Hosting a minecraft server on oboslete hardware that was collecting dust at our department
-My colleague and me had a brilliant idea of hosting a minecraft server on some old PCs we had at our lab. They were some 10+ years old PCs with some old intel quad core processors and 8 GB of DDR2/800 MHz RAM. we slapped arch on that bad boy and hosted the server. We have added the minecraft server startup service to systemd; all of this was very easy thanks to the good people at the AUR. Because this old PC we just connected to our intranet wasn't visible from the outside we both started developing our proxy solutions with nginx. You are welcome to join us by connecting to the server at zver2.zesoi.fer.hr:25565 or zver3.zesoi.fer.hr, say hi :)
+My colleague and me had a brilliant idea of hosting a minecraft server on some old PCs we had at our lab. They were some 10+ years old PCs with some old intel quad core processors and 8 GB of DDR2/800 MHz RAM. we slapped arch on that bad boy and hosted the server. We have added the minecraft server startup service to systemd; all of this was very easy thanks to the good people at the AUR. Because this old PC we just connected to our intranet wasn't visible from the outside we both started developing our proxy solutions with nginx. I will gladly send you the IP if you want to join :)
 * [Arch user repository](https://aur.archlinux.org/)
 
 
 ## Fine-tuning english GPT-2 for rap lyric generation
 This project was done during for the huggingface jax flax community week workshop. I scraped genius.com using their API to create the dataset
 we used. Model training was done on a v3 TPU on google cloud which was provided to us as a part of the workshop. The results were ok it was
-interesting to see how it captured the usual theme of the rapper’s songs (e.g. Tupac vs Lauyrn Hill). these results were cool at the time, but GPT4 and chatGPT are just too good (have that much more parameters ?)
+interesting to see how it captured the usual theme of the rapper’s songs (e.g. Tupac vs Lauyrn Hill). These results were cool at the time, but GPT4 and chatGPT are just too good (have that much <b>more parameters</b>?)
 
 * [huggingface space demo](https://huggingface.co/spaces/Cropinky/gpt2-rap-songs)
 

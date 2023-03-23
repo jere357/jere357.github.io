@@ -1,33 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
   <head>
-    <title>
-      Jere's web
-    </title>
-    <link rel="icon" type="image/x-icon" href="/assets/img/pinky.png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>LoGT</title>
-<meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="LoGT" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="Figure 1. Jeronim chilling in an unusual caffe bar at the Nürnberg castle. This photo was taken with a Chaika 2 camera." />
-<meta property="og:description" content="Figure 1. Jeronim chilling in an unusual caffe bar at the Nürnberg castle. This photo was taken with a Chaika 2 camera." />
-<link rel="canonical" href="http://localhost:4000/logt.html" />
-<meta property="og:url" content="http://localhost:4000/logt.html" />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="LoGT" />
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"Figure 1. Jeronim chilling in an unusual caffe bar at the Nürnberg castle. This photo was taken with a Chaika 2 camera.","headline":"LoGT","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/ja.jpeg"}},"url":"http://localhost:4000/logt.html"}</script>
-<!-- End Jekyll SEO tag -->
-
-    <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <link rel="stylesheet" href="/assets/css/style2.css?v=">
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
@@ -50,58 +29,25 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        
-          <img src="/assets/img/ja.jpeg" alt="Logo" />
-        
-
-        <p><b>Figure 1.</b> Jeronim chilling in an unusual caffe bar at the Nürnberg castle. This photo was taken with a Chaika 2 camera.</p>
-
-        
-        
-        <p class="view">
-          <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="17" height="17" style="vertical-align: middle;">
-          <a href="https://www.github.com/jere357" style="vertical-align: middle;">Github Profile</a></p>
-        
-
-        
-        <p class="view">
-          <img src="https://huggingface.co/favicon.ico" width="17" height="17" style="vertical-align: middle;">
-          <a href="https://www.huggingface.co/Cropinky" style="vertical-align: middle;">Huggingface Profile</a></p>
-        
-        <p class="view">
-          <img src="/assets/img/mail_icon.png" width="17" height="17" style="vertical-align: middle;">
-          <a href=mailto:"jeronim96@gmail.com">jeronim96@gmail.com</a>
-        </p>
-        <p class="view">
-          <img src="/assets/img/cv.png" width="17" height="17" style="vertical-align: middle;">
-          <a href="/assets/cv/Jeronim_Matijevic_cv.pdf" style="vertical-align: middle;">My CV</a></p>
-        </p>
-      
-
-        
-      </header>
       <section>
-
       <p><a href="./index.html">Home</a> / <a href="./research.html">Research</a></p>
 
 <h1 id="line-over-ground-truth-loss">Line Over Ground Truth loss</h1>
-
+<h2 id="0-motivation">0. Motivation</h2>
 <p>For the past 6 months, I have worked on shelf detection/enumeration. In our case, the main goal of shelf detection was to determine the ordinal number of the shelf on which the product is placed on (most bottom shelf (first), middle shelf (second), …). The exact and precise localization of the shelf bounding boxes wasn’t necessary. We have tried to apply some traditional computer vision methods to this problem but none of them proved to be robust enough to be used in an “in-the-wild” environment such as a store.</p>
 
-<p><img src="./assets/img/mapbad.png" alt="" />
+<p><img src="./assets/img/mapbad.png" alt="" width="50%" style="padding-left:25%" /><br />
 <em>Image where mAP says these predictions are bad (beacuse of it being based on IoU) but in our specific case of shelf detection/numeration the predicted bounding boxes work just fine.</em></p>
 
-<h2 id="motivation-for-this-metric">Motivation for this metric</h2>
-
-<p>I am proposing a new evaluation metric - LoGT, that represents the predicted bounding box as a line that is going through the middle of that bounding box. For a line that crosses the ground truth bounding box the value of LoGT is 1, otherwise it’s 0. Keep in mind this is purely an evaluation metric and training is still done using CIoU (me and my colleague tried to formulate our training loss but cIoU was simply better than anything we came up with :) ). This being a very simple 1-class object detection problem where even the simplest yolo network configuration achieves great results but requires a “large” amount of parameters. Using my previously proposed metric I managed to prune the memory footprint from 1.4M parameters (yolov5n, the smallest config you can find on the ultralytics yolov5 github repo) to a tiny yolov5femto/yolov5pico models of 30k/150k parameters, with the same FPN based architecture but significantly fewer filters in every convolutional layer, achieving nearly the same results on their in-house shelf detection dataset.</p>
+<h2 id="1-introduction">1. Introduction</h2>
+<p>I am proposing a new evaluation metric - LoGT, that represents the predicted bounding box as a line that is going through the middle of that bounding box. For a line that crosses the ground truth bounding box the value of LoGT is 1, otherwise it’s 0. Keep in mind this is purely an evaluation metric and training is still done using <a href="https://arxiv.org/abs/1911.08287">CIoU</a> (me and my colleague tried to formulate our training loss but cIoU was simply better than anything we came up with :) ). This being a very simple 1-class object detection problem where even the simplest yolo network configuration achieves great results but requires a “large” amount of parameters. Using my previously proposed metric I managed to prune the memory footprint from 1.4M parameters (yolov5n, the smallest config you can find on the ultralytics yolov5 github repo) to a tiny yolov5femto/yolov5pico models of 30k/150k parameters, with the same FPN based architecture but significantly fewer filters in every convolutional layer, achieving nearly the same results on their in-house shelf detection dataset.</p>
 
 <p><a href="https://github.com/jere357/yolov5-RGBD/blob/master/val_jere.py#L526">LoGT_matrix source code</a>
 I will try to explain this code here</p>
 
-<p>The general idea behind LoGT as a loss is that if a prediction desrcibed as a line passes through the ground truth bounding box the result is satisfactory. It is designed for problems where exact localization of the object isn’t necessary. A potential problem for this metric is data where there is high overlap between bounding boxes; further research required.</p>
+<p>The general idea behind LoGT as a loss is that if a prediction desrcibed as a line passes through the ground truth bounding box the result is satisfactory. It is designed for problems where exact localization of the object isn’t necessary. A potential problem I encountered for this metric is data where there is high overlap between bounding boxes. I think maybe two-stage detectors wouldn’t have these issues, further research required</p>
 
-<h2 id="explanation">Explanation</h2>
+<h2 id="2-explanation">2. Explanation</h2>
 
 <p>I will try my best to explain how i imagined LoGT loss on an example. It is similair to IoU. So far it is only discrete, it could be continuous in the future but I’m not sure how much it matters since i only use it as an evaluation metric. Let’s say you have G ground truth bounding boxes and P predictions. We construct a LoGT matrix where each row is a predicted bounding box, and each column is a ground truth bounding box. The matrix shape is PxG. Element (i,j) of that matrix is the LoGT metric between that prediction and the ground truth.</p>
 
@@ -117,11 +63,11 @@ I will try to explain this code here</p>
             <span class="n">LoGT</span><span class="p">[</span><span class="n">j</span><span class="p">,</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># it already is 0 but leaves room for future code when maybe i don't want it to be discrete
 </span>
 </code></pre></div></div>
-<h2 id="example">Example</h2>
+<h2 id="3-example">3. Example</h2>
 
 <p>Consider an example like this: green are the ground truth bounding boxes, and red are your predicitons. They are indexed with numbers so it’s more intuitive to follow the rows and columns.
-<img src="./assets/img/logt_demo1.png" alt="shelves" />
-After the algorithm is run, our LoGT matrix would look like this:</p>
+<img src="./assets/img/logt_demo1.png" alt="shelves" width="50%" style="padding-left:25%" /><br />
+This is how we want the LoGT matrix to look like after the algorithm runs on the above described data, notice 1 false positive and 2 bounding boxes for the same shelf</p>
 
 \[\begin{bmatrix}
 1 &amp; 0 &amp; 0\\
@@ -131,12 +77,11 @@ After the algorithm is run, our LoGT matrix would look like this:</p>
 0 &amp; 0 &amp; 1
 \end{bmatrix}\]
 
-<p>The above written pseudocode will behave like this</p>
-
-<p><img src="./assets/img/manimgodx.gif" alt="videozi" />
+<p style="text-align: center">The above written pseudocode will behave like this</p>
+<p style="text-align: center"><img src="./assets/img/manimgodx.gif" alt="videozi" width="50%" /><br />
 <em>This gif visually emulates how the algorithm behaves</em></p>
 
-<p>Notice that the third row is filled with zeroes, that is the false positive bounding box. Now We need to pad the matrix with null-columns until it is square. in order to lower the score for the false predictions.</p>
+<p>Notice that the third row is filled with zeroes, that is the false positive bounding box (index=2). Now We need to pad the matrix with null-columns until it is square. This lowers the score for the false predictions. Keep in mind that situation such as shelf 3 and 4 can be avoided in the yolo architecture by setting the non-maximum-supression IoU threshold to be very low.</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="nf">len</span><span class="p">(</span><span class="n">P</span><span class="p">)</span> <span class="o">&gt;</span> <span class="nf">len</span><span class="p">(</span><span class="n">G</span><span class="p">):</span>
     <span class="n">LoGT_matrix</span> <span class="o">=</span> <span class="nf">concat</span><span class="p">((</span><span class="n">LoGT_matrix</span><span class="p">,</span> <span class="n">torch</span><span class="p">.</span><span class="nf">zeros</span><span class="p">((</span><span class="n">P</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">P</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">G</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">LoGT_matrix</span><span class="p">.</span><span class="n">dtype</span><span class="p">,</span> <span class="n">device</span><span class="o">=</span><span class="n">LoGT_matrix</span><span class="p">.</span><span class="n">device</span><span class="p">)),</span> <span class="n">dim</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 </code></pre></div></div>
@@ -159,18 +104,21 @@ After the algorithm is run, our LoGT matrix would look like this:</p>
 
 <p>Final metric calculation is not trivial i guess #TODO, for this example here</p>
 
-\[LoGT= 0.66\]
+\[LoGT= 0.6\]
 
-<p>#TODO: keep developing this as an eval metric with the goal of pruning object detection models which can be quite large</p>
+<h2 id="4-future-work">4. Future Work</h2>
+<p>Here i list my plans for future work regarding the LoGT loss</p>
+<ul>
+  <li>keep developing this as an eval metric with the goal of pruning object detection models which can sometimes be unnecessarily large</li>
+  <li>fiddle around with more complex representations of the bounding box, not just as a line going through the middle</li>
+  <li>figure out if I want LoGT to be stricly discrete or maybe make it continuous(derivable) somehow.</li>
+  <li>test out LoGT on two-stage object detection models</li>
+</ul>
 
 <p>If you have any suggestions or critiques on this work feel free to contact me at jeronim96@gmail.com</p>
 
 
       </section>
-      <footer>
-        
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
     </div>
     <script src="/assets/js/scale.fix.js"></script>
   </body>
