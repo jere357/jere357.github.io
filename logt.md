@@ -64,7 +64,7 @@ The above written pseudocode will behave like this
 Notice that the third row is filled with zeroes, that is the false positive bounding box (index=2). Now We need to pad the matrix with null-columns until it is square. This lowers the score for the false predictions. Keep in mind that situation such as shelf 3 and 4 can be avoided in the yolo architecture by setting the non-maximum-supression IoU threshold to be very low.
 ```python
 if len(P) > len(G):
-    LoGT_matrix = concat((LoGT_matrix, torch.zeros((P.shape[0], P.shape[0] - G.shape[0]), dtype=LoGT_matrix.dtype, device=LoGT_matrix.device)), dim=1)
+    LoGT_matrix = concat((LoGT_matrix, zeros((P.shape[0], P.shape[0] - G.shape[0]))), dim=1)
 ```
 
 $$
@@ -85,7 +85,7 @@ $$
 \end{bmatrix}
 $$
 
-Final metric calculation pseudocode
+Final metric calculation pythonic code
 ```python
 LoGT_vector = sum(LoGT_matrix, dim=0)
 if calculate_score:
@@ -101,5 +101,6 @@ Here i list my plans for future work regarding the LoGT loss
 - fiddle around with more complex representations of the bounding box, not just as a line going through the middle
 - figure out if I want LoGT to be stricly discrete or maybe make it continuous(derivable) somehow.
 - test out LoGT on two-stage object detection models
+- maybe this whole padding with zeores thing when you have predictions than GT  boxes is not the best way to do it. I think that a simple transpose could do the trick
 
 If you have any suggestions or critiques on this work feel free to contact me at jeronim96@gmail.com

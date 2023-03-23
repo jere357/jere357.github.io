@@ -37,18 +37,17 @@ I have divided my projects into ones i have done during for my education and one
 
 
 * * * 
-
-### Interesting Deep Learning material
-- [Very good + free computer vision "basics" lectures from the University of Columbia](https://fpcv.cs.columbia.edu/)
-- [MIT course on python, very good course + material](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/)
-- [Most understandable material on LSTMs](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)
-- [Letitia making youtube videos about ML papers](https://www.youtube.com/@AICoffeeBreak/videos)
-- [Yannic making youtube videos about ML papers](https://www.youtube.com/@YannicKilcher/videos)
-- [Károly making youtube videos about ML papers](https://www.youtube.com/@TwoMinutePapers/videos)
-- [Must read Karpathy blog on RNNs](https://karpathy.github.io/2015/05/21/rnn-effectiveness/)
-- [Zero to Hero Karpathy videos](https://karpathy.ai/zero-to-hero.html)
-- [Funny loss functions blog](https://lossfunctions.tumblr.com/)
-- [very important research](https://oneweirdkerneltrick.com/)
+### Interesting Deep Learning material 
+- [Very good + free computer vision "basics" lectures from the University of Columbia](https://fpcv.cs.columbia.edu/){:width="50%"}
+- [MIT course on python, very good course + material](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/){:width="50%"}
+- [Most understandable material on LSTMs](https://colah.github.io/posts/2015-08-Understanding-LSTMs/){:width="50%"}
+- [Letitia making youtube videos about ML papers](https://www.youtube.com/@AICoffeeBreak/videos){:width="50%"}
+- [Yannic making youtube videos about ML papers](https://www.youtube.com/@YannicKilcher/videos){:width="50%"}
+- [Károly making youtube videos about ML papers](https://www.youtube.com/@TwoMinutePapers/videos){:width="50%"}
+- [Must read Karpathy blog on RNNs](https://karpathy.github.io/2015/05/21/rnn-effectiveness/){:width="50%"}
+- [Zero to Hero Karpathy videos](https://karpathy.ai/zero-to-hero.html){:width="50%"}
+- [Funny loss functions blog](https://lossfunctions.tumblr.com/){:width="50%"}
+- [very important research](https://oneweirdkerneltrick.com/){:width="50%"}
 
 * * *
 

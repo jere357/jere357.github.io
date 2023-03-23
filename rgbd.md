@@ -4,9 +4,9 @@ layout: default2
 
 [Home](./index.html) / [Research](./research.html)
 
-# Adding additional channel features to object detection models.
+# Adding additional channel features to object detection models?
 
- I am interested in experimenting with a novel approach to object detection. (I have been unsuccesful in finding related work regarding this theme). Rather than relying solely on RGB images, I aim to enhance the input data by adding extra channel features. By doing so, I hope to create a more nuanced and detailed representation of the images, which can potentially lead to exciting advances in computer vision research. (I may be wrong idk)
+ I am interested in experimenting with a novel approach to object detection. (I have been unsuccesful in finding related work regarding this theme). Rather than relying solely on RGB images, I aim to enhance the input data by adding extra channel features. By doing so, I hope to create a more nuanced and detailed representation of the images, that might be unintuitive to people, but neural networks might understand it. (I may be wrong idk)
 
 ![image](./assets/img/rgbd.png)
 
@@ -23,3 +23,5 @@ Some of "channel features" I think are worth testing out:
 One of my colleagues suggested a different approach where you take features from say the middle of the depth estimation network and concat those features to the features extracted from the rgb image. This is also something i consider worth exploring
 
 I feel like a similar approach is being done by Zhang et al. in the [ControlNet](https://arxiv.org/pdf/2302.05543.pdf) paper the way they kinda nudge the network towards what they want it to do - i think same results could be achieved in object detection networks as well
+
+If you have any suggestions or critiques on this work feel free to contact me at jeronim96@gmail.com

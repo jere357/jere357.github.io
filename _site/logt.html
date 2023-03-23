@@ -83,7 +83,7 @@ This is how we want the LoGT matrix to look like after the algorithm runs on the
 
 <p>Notice that the third row is filled with zeroes, that is the false positive bounding box (index=2). Now We need to pad the matrix with null-columns until it is square. This lowers the score for the false predictions. Keep in mind that situation such as shelf 3 and 4 can be avoided in the yolo architecture by setting the non-maximum-supression IoU threshold to be very low.</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="nf">len</span><span class="p">(</span><span class="n">P</span><span class="p">)</span> <span class="o">&gt;</span> <span class="nf">len</span><span class="p">(</span><span class="n">G</span><span class="p">):</span>
-    <span class="n">LoGT_matrix</span> <span class="o">=</span> <span class="nf">concat</span><span class="p">((</span><span class="n">LoGT_matrix</span><span class="p">,</span> <span class="n">torch</span><span class="p">.</span><span class="nf">zeros</span><span class="p">((</span><span class="n">P</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">P</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">G</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">LoGT_matrix</span><span class="p">.</span><span class="n">dtype</span><span class="p">,</span> <span class="n">device</span><span class="o">=</span><span class="n">LoGT_matrix</span><span class="p">.</span><span class="n">device</span><span class="p">)),</span> <span class="n">dim</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">LoGT_matrix</span> <span class="o">=</span> <span class="nf">concat</span><span class="p">((</span><span class="n">LoGT_matrix</span><span class="p">,</span> <span class="nf">zeros</span><span class="p">((</span><span class="n">P</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">P</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">G</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]))),</span> <span class="n">dim</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 </code></pre></div></div>
 
 \[\begin{bmatrix}
@@ -100,7 +100,7 @@ This is how we want the LoGT matrix to look like after the algorithm runs on the
 1 &amp; 1 &amp; 2 &amp; 0 &amp; 0\\
 \end{bmatrix}\]
 
-<p>Final metric calculation pseudocode</p>
+<p>Final metric calculation pythonic code</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">LoGT_vector</span> <span class="o">=</span> <span class="nf">sum</span><span class="p">(</span><span class="n">LoGT_matrix</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 <span class="k">if</span> <span class="n">calculate_score</span><span class="p">:</span>
     <span class="n">correct_predictions</span> <span class="o">=</span> <span class="nf">count_nonzero</span><span class="p">(</span><span class="n">LoGT_vector</span><span class="p">)</span>
@@ -116,6 +116,7 @@ This is how we want the LoGT matrix to look like after the algorithm runs on the
   <li>fiddle around with more complex representations of the bounding box, not just as a line going through the middle</li>
   <li>figure out if I want LoGT to be stricly discrete or maybe make it continuous(derivable) somehow.</li>
   <li>test out LoGT on two-stage object detection models</li>
+  <li>maybe this whole padding with zeores thing when you have predictions than GT  boxes is not the best way to do it. I think that a simple transpose could do the trick</li>
 </ul>
 
 <p>If you have any suggestions or critiques on this work feel free to contact me at jeronim96@gmail.com</p>
