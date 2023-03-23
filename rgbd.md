@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default2
 ---
 
 [Home](./index.html) / [Research](./research.html)

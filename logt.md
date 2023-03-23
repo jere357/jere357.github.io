@@ -42,7 +42,7 @@ for line in P:
 
 Consider an example like this: green are the ground truth bounding boxes, and red are your predicitons. They are indexed with numbers so it's more intuitive to follow the rows and columns.
 ![shelves](./assets/img/logt_demo1.png){:width="50%"  style="padding-left:25%"}\
-This is how we want the LoGT matrix to look like after the algorithm runs on the above described data, notice 1 false positive and 2 bounding boxes for the same shelf
+This is how we want the LoGT matrix to look like after the algorithm runs on the above described data, notice 1 false positive and 2 bounding boxes for the same shelf. They are the the last three rows of this matrix
 
 $$
 \begin{bmatrix}
@@ -67,9 +67,6 @@ if len(P) > len(G):
     LoGT_matrix = concat((LoGT_matrix, torch.zeros((P.shape[0], P.shape[0] - G.shape[0]), dtype=LoGT_matrix.dtype, device=LoGT_matrix.device)), dim=1)
 ```
 
-#TODO: multiple predictions of the same shelf -> post processing
-
-
 $$
 \begin{bmatrix}
 1 & 0 & 0 & 0 & 0\\
@@ -84,13 +81,19 @@ after this our matrix looks like this, in order to calculate the final LoGT scor
 
 $$
 \begin{bmatrix}
-1 & 1 & 1 & 0 & 0\\
+1 & 1 & 2 & 0 & 0\\
 \end{bmatrix}
 $$
 
-Final metric calculation is not trivial i guess #TODO, for this example here
+Final metric calculation pseudocode
+```python
+LoGT_vector = sum(LoGT_matrix, dim=0)
+if calculate_score:
+    correct_predictions = count_nonzero(LoGT_vector)
+    LoGT_score = correct_predictions / LoGT_vector.shape[0]
+```
 
-$$LoGT= 0.6$$
+$$LoGT\_score= 0.6$$
 
 ## 4. Future Work
 Here i list my plans for future work regarding the LoGT loss
