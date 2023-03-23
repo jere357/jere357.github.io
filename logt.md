@@ -42,13 +42,6 @@ for line in P:
 
 Consider an example like this: green are the ground truth bounding boxes, and red are your predicitons. They are indexed with numbers so it's more intuitive to follow the rows and columns.
 ![shelves](./assets/img/logt_demo1.png)
-
-The above written pseudocode will behave like this
-
-![videozi](./assets/img/manimgodx.gif)
-*This gif visually emulates how the algorithm behaves*
-
-
 After the algorithm is run, our LoGT matrix would look like this:
 
 $$
@@ -60,6 +53,13 @@ $$
 0 & 0 & 1
 \end{bmatrix}
 $$
+
+The above written pseudocode will behave like this
+
+![videozi](./assets/img/manimgodx.gif)
+*This gif visually emulates how the algorithm behaves*
+
+
 
 Notice that the third row is filled with zeroes, that is the false positive bounding box. Now We need to pad the matrix with null-columns until it is square. in order to lower the score for the false predictions.
 ```python
@@ -75,7 +75,7 @@ $$
 1 & 0 & 0 & 0 & 0\\
 0 & 1 & 0 & 0 & 0\\
 0 & 0 & 0 & 0 & 0\\
-0 & 0 & 1 & 0 & 0
+0 & 0 & 1 & 0 & 0\\
 0 & 0 & 1 & 0 & 0
 \end{bmatrix}
 $$
