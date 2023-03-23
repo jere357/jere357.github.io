@@ -41,6 +41,7 @@ for line in P:
 ## 3. Example
 
 Consider an example like this: green are the ground truth bounding boxes, and red are your predicitons. They are indexed with numbers so it's more intuitive to follow the rows and columns.
+
 ![shelves](./assets/img/logt_demo1.png){:width="50%"  style="padding-left:25%"}\
 This is how we want the LoGT matrix to look like after the algorithm runs on the above described data, notice 1 false positive and 2 bounding boxes for the same shelf. They are the the last three rows of this matrix
 
