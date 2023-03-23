@@ -84,12 +84,13 @@ after this our matrix looks like this, in order to calculate the final LoGT scor
 
 $$
 \begin{bmatrix}
-1 & 1 & 1 & 0\\
+1 & 1 & 1 & 0 & 0\\
 \end{bmatrix}
 $$
 
-Final metric calculation is trivial, for this example here 
-$$LoGT= 0.75$$
+Final metric calculation is not trivial i guess #TODO, for this example here
+
+$$LoGT= 0.66$$
 
 #TODO: keep developing this as an eval metric with the goal of pruning object detection models which can be quite large
 
