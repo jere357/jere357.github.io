@@ -28,7 +28,7 @@ MLOps is also something I find very interesting.
 ### My projects
 I have divided my projects into ones i have done during for my education and ones i have done in my free time
 
-* [Some of my finished and still unfinished research](./research.html)
+* [Some of my still unfinished research](./research.html)
 
 * [Some of my hobby projects](./hobby_projects.html).
 
