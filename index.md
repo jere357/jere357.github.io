@@ -54,7 +54,7 @@ I have divided my projects into ones i have done during for my education and one
 
 ### Cool things on the internet
 - [Watchmeforever AI generated TV show](https://twitch.tv/watchmeforever)
-- [DAN adversarial attacks on chatGPT](https://gist.github.com/coolaj86/6f4f7b30129b0251f61fa7baaa881516) - idk what the hell is going on here
+- [DAN adversarial attacks on chatGPT](https://gist.github.com/coolaj86/6f4f7b30129b0251f61fa7baaa881516) - idk wtf
 - [ezyang blog](http://blog.ezyang.com/)
 - [jspaint](https://jspaint.app)
 - [Vaisko](https://www.vaisko.com)
