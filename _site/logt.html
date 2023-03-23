@@ -12,7 +12,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>LoGT</title>
 <meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:title" content="LoGT" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Figure 1. Jeronim chilling in an unusual caffe bar at the Nürnberg castle. This photo was taken with a Chaika 2 camera." />
 <meta property="og:description" content="Figure 1. Jeronim chilling in an unusual caffe bar at the Nürnberg castle. This photo was taken with a Chaika 2 camera." />
@@ -20,8 +22,9 @@
 <meta property="og:url" content="http://localhost:4000/logt.html" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="LoGT" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"Figure 1. Jeronim chilling in an unusual caffe bar at the Nürnberg castle. This photo was taken with a Chaika 2 camera.","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/ja.jpeg"}},"url":"http://localhost:4000/logt.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"Figure 1. Jeronim chilling in an unusual caffe bar at the Nürnberg castle. This photo was taken with a Chaika 2 camera.","headline":"LoGT","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/ja.jpeg"}},"url":"http://localhost:4000/logt.html"}</script>
 <!-- End Jekyll SEO tag -->
 
     <link rel="stylesheet" href="/assets/css/style.css?v=">
@@ -117,23 +120,23 @@ I will try to explain this code here</p>
 <h2 id="example">Example</h2>
 
 <p>Consider an example like this: green are the ground truth bounding boxes, and red are your predicitons. They are indexed with numbers so it’s more intuitive to follow the rows and columns.
-<img src="./assets/img/logt_demo1.png" alt="shelves" /></p>
+<img src="./assets/img/logt_demo1.png" alt="shelves" />
+After the algorithm is run, our LoGT matrix would look like this:</p>
+
+\[\begin{bmatrix}
+1 &amp; 0 &amp; 0\\
+0 &amp; 1 &amp; 0\\
+0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 1\\
+0 &amp; 0 &amp; 1
+\end{bmatrix}\]
 
 <p>The above written pseudocode will behave like this</p>
 
 <p><img src="./assets/img/manimgodx.gif" alt="videozi" />
 <em>This gif visually emulates how the algorithm behaves</em></p>
 
-<p>After the algorithm is run, our LoGT matrix would look like this:</p>
-
-\[\begin{bmatrix}
-1 &amp; 0 &amp; 0\\
-0 &amp; 1 &amp; 0\\
-0 &amp; 0 &amp; 1\\
-0 &amp; 0 &amp; 0
-\end{bmatrix}\]
-
-<p>Notice that the last row is filled with zeroes, that is the false positive bounding box. We need to pad the matrix with null-columns until it is square.</p>
+<p>Notice that the third row is filled with zeroes, that is the false positive bounding box. Now We need to pad the matrix with null-columns until it is square. in order to lower the score for the false predictions.</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="nf">len</span><span class="p">(</span><span class="n">P</span><span class="p">)</span> <span class="o">&gt;</span> <span class="nf">len</span><span class="p">(</span><span class="n">G</span><span class="p">):</span>
     <span class="n">LoGT_matrix</span> <span class="o">=</span> <span class="nf">concat</span><span class="p">((</span><span class="n">LoGT_matrix</span><span class="p">,</span> <span class="n">torch</span><span class="p">.</span><span class="nf">zeros</span><span class="p">((</span><span class="n">P</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">P</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">G</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">LoGT_matrix</span><span class="p">.</span><span class="n">dtype</span><span class="p">,</span> <span class="n">device</span><span class="o">=</span><span class="n">LoGT_matrix</span><span class="p">.</span><span class="n">device</span><span class="p">)),</span> <span class="n">dim</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 </code></pre></div></div>
@@ -141,20 +144,22 @@ I will try to explain this code here</p>
 <p>#TODO: multiple predictions of the same shelf -&gt; post processing</p>
 
 \[\begin{bmatrix}
-1 &amp; 0 &amp; 0 &amp; 0\\
-0 &amp; 1 &amp; 0 &amp; 0\\
-0 &amp; 0 &amp; 1 &amp; 0\\
-0 &amp; 0 &amp; 0 &amp; 0
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0
 \end{bmatrix}\]
 
 <p>after this our matrix looks like this, in order to calculate the final LoGT score we just sum the columns and voila - we  have our LoGT vector.</p>
 
 \[\begin{bmatrix}
-1 &amp; 1 &amp; 1 &amp; 0\\
+1 &amp; 1 &amp; 1 &amp; 0 &amp; 0\\
 \end{bmatrix}\]
 
-<p>Final metric calculation is trivial, for this example here 
-\(LoGT= 0.75\)</p>
+<p>Final metric calculation is not trivial i guess #TODO, for this example here</p>
+
+\[LoGT= 0.66\]
 
 <p>#TODO: keep developing this as an eval metric with the goal of pruning object detection models which can be quite large</p>
 

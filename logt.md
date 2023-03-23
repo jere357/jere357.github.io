@@ -1,5 +1,6 @@
 ---
 layout: default
+title: LoGT
 ---
 
 [Home](./index.html) / [Research](./research.html)
