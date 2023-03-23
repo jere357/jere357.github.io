@@ -55,12 +55,13 @@ $$
 \begin{bmatrix}
 1 & 0 & 0\\
 0 & 1 & 0\\
+0 & 0 & 0\\
 0 & 0 & 1\\
-0 & 0 & 0
+0 & 0 & 1
 \end{bmatrix}
 $$
 
-Notice that the last row is filled with zeroes, that is the false positive bounding box. We need to pad the matrix with null-columns until it is square.
+Notice that the third row is filled with zeroes, that is the false positive bounding box. Now We need to pad the matrix with null-columns until it is square. in order to lower the score for the false predictions.
 ```python
 if len(P) > len(G):
     LoGT_matrix = concat((LoGT_matrix, torch.zeros((P.shape[0], P.shape[0] - G.shape[0]), dtype=LoGT_matrix.dtype, device=LoGT_matrix.device)), dim=1)
@@ -69,16 +70,13 @@ if len(P) > len(G):
 #TODO: multiple predictions of the same shelf -> post processing
 
 
-
-
-
-
 $$
 \begin{bmatrix}
-1 & 0 & 0 & 0\\
-0 & 1 & 0 & 0\\
-0 & 0 & 1 & 0\\
-0 & 0 & 0 & 0
+1 & 0 & 0 & 0 & 0\\
+0 & 1 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0\\
+0 & 0 & 1 & 0 & 0
+0 & 0 & 1 & 0 & 0
 \end{bmatrix}
 $$
 
