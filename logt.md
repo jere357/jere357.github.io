@@ -78,7 +78,7 @@ $$
 \end{bmatrix}
 $$
 
-after this our matrix looks like this, in order to calculate the final LoGT score we just sum the columns and voila - we  have our LoGT vector.
+after this our matrix looks like this, in order to calculate the final LoGT score we just sum by the columns and voila - we  have our LoGT vector.
 
 $$
 \begin{bmatrix}
