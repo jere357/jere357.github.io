@@ -23,5 +23,5 @@ Some of "channel features" I think are worth testing out:
 One of my colleagues suggested a different approach where you take features from say the middle of the depth estimation network and concat those features to the features extracted from the rgb image. This is also something i consider worth exploring
 
 I feel like a similar approach is being done by Zhang et al. in the [ControlNet](https://arxiv.org/pdf/2302.05543.pdf) paper the way they kinda nudge the network towards what they want it to do - i think same results could be achieved in object detection networks as well
-
+potential related work: [this 24 page paper xd](https://arxiv.org/pdf/2106.02795.pdf)
 If you have any suggestions or critiques on this work feel free to contact me at jeronim96@gmail.com
