@@ -59,7 +59,7 @@ I have divided my projects into ones i have done during for my education and one
 - [jspaint](https://jspaint.app)
 - [Vaisko](https://www.vaisko.com)
 - [Smile.rip](https://smile.rip/) 
-- [marulianus.hr](www.marulianus.hr)
+- [marulianus.hr](marulianus.hr)
 - [Auralnauts](https://youtu.be/WSCm8yAxBr8)
 - [Seppo Linnainmaa wikipedia page](https://en.wikipedia.org/wiki/Seppo_Linnainmaa) - this guy implemented backprop in fortran in 1970 as his msc thesis
 - [Have you tried using ffmpeg?](https://youtu.be/9kaIXkImCAM)
