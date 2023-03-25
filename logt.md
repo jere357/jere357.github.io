@@ -5,8 +5,12 @@ title: LoGT
 
 [Home](./index.html) / [Research](./research.html)
 
+
+
+[Line over Ground Truth][def]
+
 # Line Over Ground Truth loss
-## 0. Motivation
+
 For the past 6 months, I have worked on shelf detection/enumeration. In our case, the main goal of shelf detection was to determine the ordinal number of the shelf on which the product is placed on (most bottom shelf (first), middle shelf (second), ...). The exact and precise localization of the shelf bounding boxes wasn't necessary. We have tried to apply some traditional computer vision methods to this problem but none of them proved to be robust enough to be used in an "in-the-wild" environment such as a store.
 
 ![](./assets/img/mapbad.png){:width="50%"  style="padding-left:25%"}\
@@ -105,3 +109,6 @@ Here i list my plans for future work regarding the LoGT loss
 - maybe this whole padding with zeores thing when you have predictions than GT  boxes is not the best way to do it. I think that a simple transpose could do the trick
 
 If you have any suggestions or critiques on this work feel free to contact me at jeronim96@gmail.com
+
+
+[def]: #1-intoduction
