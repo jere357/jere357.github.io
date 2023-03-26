@@ -48,6 +48,7 @@ I have divided my projects into ones i have done during for my education and one
 - [Zero to Hero Karpathy videos](https://karpathy.ai/zero-to-hero.html){:width="50%"}
 - [Funny loss functions blog](https://lossfunctions.tumblr.com/){:width="50%"}
 - [very important research](https://oneweirdkerneltrick.com/){:width="50%"}
+
 * * *
 
 ### Cool/funny things on the internet
