@@ -26,13 +26,13 @@ MLOps is also something I find very interesting.
 
 
 ### My projects
-I have divided my projects into ones i have done during for my education and ones i have done in my free time
+I have divided my projects into ones i have done during for my education and ones i have done in my free time + things i want to research
 
-* [Some of my still unfinished research](./research.html)
+1. [Some of my still unfinished research](./research.html)
 
-* [Some of my hobby projects](./hobby_projects.html).
+2. [Some of my hobby projects](./hobby_projects.html).
 
-* [Short overview of my Deep Learning university projects](./university_projects.html).
+3. [Short overview of my Deep Learning university projects](./university_projects.html).
 
 
 
@@ -48,7 +48,7 @@ I have divided my projects into ones i have done during for my education and one
 - [Zero to Hero Karpathy videos](https://karpathy.ai/zero-to-hero.html){:width="50%"}
 - [Funny loss functions blog](https://lossfunctions.tumblr.com/){:width="50%"}
 - [very important research](https://oneweirdkerneltrick.com/){:width="50%"}
-
+- [How i feel about ML research](/assets/img/)
 * * *
 
 ### Cool/funny things on the internet
@@ -62,6 +62,8 @@ I have divided my projects into ones i have done during for my education and one
 - [marulianus.hr](marulianus.hr)
 - [Auralnauts](https://youtu.be/WSCm8yAxBr8)
 - [Seppo Linnainmaa wikipedia page](https://en.wikipedia.org/wiki/Seppo_Linnainmaa) - this guy implemented backprop in fortran in 1970 as his msc thesis
+- [programemezzz](https://instagram.com/programemezzz)
+- [How i sometimes feel about ML research](/assets/img/mrfantastic.png)
 - [Have you tried using ffmpeg?](https://youtu.be/9kaIXkImCAM)
 
 ### Life Goals
