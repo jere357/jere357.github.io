@@ -4,11 +4,22 @@ layout: default2
 
 [Home](./index.html) / [Research](./research.html)
 
+- [RGBD object detection]()
+  - [0. Motivation](#0-motivation)
+  - [2. Proposal](#2-explanation)
+  - [3. Example](#3-example)
 # Adding additional channel features to object detection models?
 
  I am interested in experimenting with a novel approach to object detection. (I have been unsuccesful in finding related work regarding this theme). Rather than relying solely on RGB images, I aim to enhance the input data by adding extra channel features. By doing so, I hope to create a more nuanced and detailed representation of the images, that might be unintuitive to people, but neural networks might understand it. (I may be wrong idk)
 
 ![image](./assets/img/rgbd.png)
+
+
+## 0. Motivation
+\#TODO: obj det na canny + depth slikama
+\#TODO: definicja preko skupova
+
+## 1. Potential channel features
 
 Some of "channel features" I think are worth testing out:
 
@@ -19,6 +30,8 @@ Some of "channel features" I think are worth testing out:
 3.    Canny edge feature RGB->RGBC, applying the canny edge algorithm on an image and using that grayscale image as a feature, this is my least favorite featureof the 4, because of the way CNNs work, but I think it still has enough potential to warrant experiments.
 
 4.    Sobel features - maybe something interesting could be achieved by applying a sobel operator to the input image - also can be a learnable parameter if it seems like something worth exploring
+
+5. CLIP embedding of the image ? ? - as seen in stable diffusion
 
 One of my colleagues suggested a different approach where you take features from say the middle of the depth estimation network and concat those features to the features extracted from the rgb image. This is also something i consider worth exploring
 
