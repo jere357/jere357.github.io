@@ -9,7 +9,7 @@ title: LoGT
   - [1. Introduction](#1-introduction)
   - [2. Explanation](#2-explanation)
   - [3. Example](#3-example)
-  - [4. Future\_Work](#4-future_work)
+  - [4. Future Work](#4-future-work)
 
 
 # Line Over Ground Truth loss
@@ -103,7 +103,7 @@ if calculate_score:
 
 $$LoGT\_score= 0.6$$
 
-## 4. Future_Work
+## 4. Future Work
 Here i list my plans for future work regarding the LoGT loss
 - keep developing this as an eval metric with the goal of pruning object detection models which can sometimes be unnecessarily large
 - fiddle around with more complex representations of the bounding box, not just as a line going through the middle
