@@ -19,6 +19,13 @@ This project was done for the huggan huggingface event. I used the wikiart datas
 
  These results were cool when they came out but models like DALLE2 and stable diffusion are just something else man
 
+![impr](/assets/img/impressionism.png){:width="50%"  style="padding-left:25%"}
+*Some cherry picked results from the impressionism model*
+
+![hhae](/assets/img/AE_HH.png){:width="50%"  style="padding-left:25%"}
+
+*results from the abstract expressionism model that was trasnfer learned to paint Hana's houses*
+
 * [huggingface space demo](https://huggingface.co/spaces/huggan/projected_gan_art)
 * [Instagram link where you can see some of her work](https://www.instagram.com/hanaqhanak)
 
