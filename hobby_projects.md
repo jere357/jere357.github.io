@@ -15,7 +15,9 @@ This was a project I made for fun, I wanted to make a world of warcraft fishing 
 * [github repo](https://github.com/jere357/fishermansfriend)
 
 ## Projected GAN for painting generation
-This project was done for the huggan huggingface event. I used the wikiart dataset and trained the projected GAN on it, I also trained/transfer learned a couple of models to my academic painter friends' paintings that all contained small houses, since she had around ~20 paintings with small houses i was interested in whether that was enough for a GAN to actually learn how to generate such houses since they are all of similair shape. I was also interested in seeing how transfer learning behaved when working with GANs. These results were cool when they came out but models like DALLE2 and stable diffusion are just something else man
+This project was done for the huggan huggingface event. I used the wikiart dataset and trained the projected GAN on it, I also trained/transfer learned a couple of models to my academic painter friends' paintings that all contained small houses, since she had around ~20 paintings with small houses i was interested in whether that was enough for a GAN to actually learn how to generate such houses since they are all of similair shape. I was also interested in seeing how transfer learning behaved when working with GANs. I have taken some models trained on e.g. abstract expressionism images and and the fine-tuned it to Hana's houses. The results very neat but this event lasted only 2 weeks i think so i didn't have time to experiment further / formulate some kind of loss to measure the impact of this transfer learning.
+
+ These results were cool when they came out but models like DALLE2 and stable diffusion are just something else man
 
 * [huggingface space demo](https://huggingface.co/spaces/huggan/projected_gan_art)
 * [Instagram link where you can see some of her work](https://www.instagram.com/hanaqhanak)
