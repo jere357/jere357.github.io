@@ -7,7 +7,7 @@ I'm a Graduate student at the University of Zagreb, Faculty of Electrical Engine
 
 The reason why I created this webiste is because all the projects listed in my CV were bloating it too much, and I felt that people would skip over it without reading anything. + ngl i always wanted to have a tumblr so i guess this is something like it
 
-Generally I find models bridging the gap between natural language processing and computer vision fascinating. I think CLIP embeddings will become a part of every stat-of-the-art compiter vision model in the upcoming years
+Generally I find models bridging the gap between natural language processing and computer vision fascinating. I think CLIP embeddings will become a part of every state-of-the-art computer vision model in the future
 
 MLOps is also something I find very interesting.
 
