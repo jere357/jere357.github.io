@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## Hello there, I am Jeronim Matijević
+# Hello there, I am Jeronim Matijević
 I'm a Graduate student at the Faculty of Electrical Engineering and Computing, Zagreb currently enrolled in the Computer Science MSc programme. Passionate about neural networks for all purposes.
 
 The reason why I created this webiste is because all the projects listed in my CV were bloating it too much, and I felt that people would skip over it without reading anything. + ngl i always wanted to have a tumblr so i guess this is something like it
@@ -14,7 +14,7 @@ MLOps is also something I find very interesting.
 * * *
 
 
-### Fields of interest
+## Fields of interest
 
 * Computer vision
 * Generative models
@@ -25,7 +25,7 @@ MLOps is also something I find very interesting.
 
 
 
-### My projects
+# My projects
 I have divided my projects into ones i have done during for my education and ones i have done in my free time + things i want to research
 
 1. [Some of my still unfinished research](./research.html)
@@ -37,7 +37,7 @@ I have divided my projects into ones i have done during for my education and one
 
 
 * * * 
-### Interesting Deep Learning material 
+## Interesting Deep Learning material 
 - [Very good + free computer vision "basics" lectures from the University of Columbia](https://fpcv.cs.columbia.edu/){:width="50%"}
 - [MIT course on python, very good course + material](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/){:width="50%"}
 - [Most understandable material on LSTMs](https://colah.github.io/posts/2015-08-Understanding-LSTMs/){:width="50%"}
@@ -51,7 +51,7 @@ I have divided my projects into ones i have done during for my education and one
 
 * * *
 
-### Cool/funny things on the internet
+## Cool/funny things on the internet
 - [Watchmeforever AI generated TV show](https://twitch.tv/watchmeforever)
 - [DAN adversarial attacks on chatGPT](https://gist.github.com/coolaj86/6f4f7b30129b0251f61fa7baaa881516)
 - [manim](https://www.manim.community/) - very cool library for math visualization, used by 3blue1brown
@@ -66,6 +66,6 @@ I have divided my projects into ones i have done during for my education and one
 - [How i sometimes feel about ML research](/assets/img/mrfantastic.png)
 - [Have you tried using ffmpeg?](https://youtu.be/9kaIXkImCAM)
 
-### Life Goals
+## Life Goals
 - Make it through my entire life without ever making a linkedin profile
 - To own a small boat
