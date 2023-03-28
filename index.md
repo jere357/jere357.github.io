@@ -67,5 +67,4 @@ I have divided my projects into ones i have done during for my education and one
 - [Have you tried using ffmpeg?](https://youtu.be/9kaIXkImCAM)
 
 ## Life Goals
-- Make it through my entire life without ever making a linkedin profile
 - To own a small boat
