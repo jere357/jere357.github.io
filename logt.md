@@ -35,6 +35,14 @@ I will try my best to explain how i imagined LoGT loss on an example. It is simi
 The First thing to do is deconstruct the prediction bounding boxes into lines, this could be something else but i decided to [KISS](https://en.wikipedia.org/wiki/KISS_principle) (so far, I felt there was no need to complicate things on a simple task such as shelf detection).
 
 ```python
+def overlap(line, ground_truth_bbox):
+    #assume that ground truth bounding boxes are defined with 2 points, bottom-left and top-right
+    #we say that a line overlaps a bounding box if its y coordinate is between the the two y coordinates of the bounding box
+    if ground_truth_bbox.y1 < line.y < ground_truth_bbox.y2
+        return True
+    else:
+        return False
+
 P = bboxes_to_lines(predictions) # represent predicted bboxes as a single line going through the middle of that box
 LoGT_matrix = zeros(P,G) # [PxG] skeleton
 for line in P:
