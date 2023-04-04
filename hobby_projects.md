@@ -20,6 +20,7 @@ This project was done for the huggan huggingface event. I used the wikiart datas
  These results were cool when they came out but models like DALLE2 and stable diffusion are just something else man
 
 ![impr](/assets/img/impressionism.png){:width="50%"  style="padding-left:25%"}
+
 *Some cherry picked results from the impressionism model*
 
 ![hhae](/assets/img/AE_HH.png){:width="50%"  style="padding-left:25%"}
