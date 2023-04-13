@@ -8,6 +8,7 @@ layout: default2
   - [0. Motivation](#0-motivation)
   - [2. Proposal](#2-explanation)
   - [3. Example](#3-example)
+
 # Adding additional channel features to object detection models?
 
  I am interested in experimenting with a novel approach to object detection. (I have been unsuccesful in finding related work regarding this theme). Rather than relying solely on RGB images, I aim to enhance the input data by adding extra channel features. By doing so, I hope to create a more nuanced and detailed representation of the images, that might be unintuitive to people, but neural networks might understand it. (I may be wrong idk)

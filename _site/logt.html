@@ -32,8 +32,19 @@
       <section>
       <p><a href="./index.html">Home</a> / <a href="./research.html">Research</a></p>
 
+<ul>
+  <li><a href="#line-over-ground-truth-loss">Line Over Ground Truth loss</a>
+    <ul>
+      <li><a href="#1-introduction">1. Introduction</a></li>
+      <li><a href="#2-explanation">2. Explanation</a></li>
+      <li><a href="#3-example">3. Example</a></li>
+      <li><a href="#4-future-work">4. Future Work</a></li>
+    </ul>
+  </li>
+</ul>
+
 <h1 id="line-over-ground-truth-loss">Line Over Ground Truth loss</h1>
-<h2 id="0-motivation">0. Motivation</h2>
+
 <p>For the past 6 months, I have worked on shelf detection/enumeration. In our case, the main goal of shelf detection was to determine the ordinal number of the shelf on which the product is placed on (most bottom shelf (first), middle shelf (second), …). The exact and precise localization of the shelf bounding boxes wasn’t necessary. We have tried to apply some traditional computer vision methods to this problem but none of them proved to be robust enough to be used in an “in-the-wild” environment such as a store.</p>
 
 <p><img src="./assets/img/mapbad.png" alt="" width="50%" style="padding-left:25%" /><br />
@@ -53,7 +64,15 @@ I will try to explain this code here</p>
 
 <p>The First thing to do is deconstruct the prediction bounding boxes into lines, this could be something else but i decided to <a href="https://en.wikipedia.org/wiki/KISS_principle">KISS</a> (so far, I felt there was no need to complicate things on a simple task such as shelf detection).</p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">P</span> <span class="o">=</span> <span class="nf">bboxes_to_lines</span><span class="p">(</span><span class="n">predictions</span><span class="p">)</span> <span class="c1"># represent predicted bboxes as a single line going through the middle of that box
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">overlap</span><span class="p">(</span><span class="n">line</span><span class="p">,</span> <span class="n">ground_truth_bbox</span><span class="p">):</span>
+    <span class="c1">#assume that ground truth bounding boxes are defined with 2 points, bottom-left and top-right
+</span>    <span class="c1">#we say that a line overlaps a bounding box if its y coordinate is between the the two y coordinates of the bounding box
+</span>    <span class="k">if</span> <span class="n">ground_truth_bbox</span><span class="p">.</span><span class="n">y1</span> <span class="o">&lt;</span> <span class="n">line</span><span class="p">.</span><span class="n">y</span> <span class="o">&lt;</span> <span class="n">ground_truth_bbox</span><span class="p">.</span><span class="n">y2</span>
+        <span class="k">return</span> <span class="bp">True</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">False</span>
+
+<span class="n">P</span> <span class="o">=</span> <span class="nf">bboxes_to_lines</span><span class="p">(</span><span class="n">predictions</span><span class="p">)</span> <span class="c1"># represent predicted bboxes as a single line going through the middle of that box
 </span><span class="n">LoGT_matrix</span> <span class="o">=</span> <span class="nf">zeros</span><span class="p">(</span><span class="n">P</span><span class="p">,</span><span class="n">G</span><span class="p">)</span> <span class="c1"># [PxG] skeleton
 </span><span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">P</span><span class="p">:</span>
     <span class="k">for</span> <span class="n">ground_truth</span> <span class="ow">in</span> <span class="n">G</span><span class="p">:</span>
@@ -121,6 +140,7 @@ This is how we want the LoGT matrix to look like after the algorithm runs on the
 </ul>
 
 <p>If you have any suggestions or critiques on this work feel free to contact me at jeronim96@gmail.com</p>
+
 
 
       </section>

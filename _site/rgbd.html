@@ -32,11 +32,27 @@
       <section>
       <p><a href="./index.html">Home</a> / <a href="./research.html">Research</a></p>
 
+<ul>
+  <li><a href="">RGBD object detection</a>
+    <ul>
+      <li><a href="#0-motivation">0. Motivation</a></li>
+      <li><a href="#2-explanation">2. Proposal</a></li>
+      <li><a href="#3-example">3. Example</a></li>
+    </ul>
+  </li>
+</ul>
+
 <h1 id="adding-additional-channel-features-to-object-detection-models">Adding additional channel features to object detection models?</h1>
 
 <p>I am interested in experimenting with a novel approach to object detection. (I have been unsuccesful in finding related work regarding this theme). Rather than relying solely on RGB images, I aim to enhance the input data by adding extra channel features. By doing so, I hope to create a more nuanced and detailed representation of the images, that might be unintuitive to people, but neural networks might understand it. (I may be wrong idk)</p>
 
 <p><img src="./assets/img/rgbd.png" alt="image" /></p>
+
+<h2 id="0-motivation">0. Motivation</h2>
+<p>#TODO: obj det na canny + depth slikama
+#TODO: definicja preko skupova</p>
+
+<h2 id="1-potential-channel-features">1. Potential channel features</h2>
 
 <p>Some of “channel features” I think are worth testing out:</p>
 
@@ -53,13 +69,16 @@
   <li>
     <p>Sobel features - maybe something interesting could be achieved by applying a sobel operator to the input image - also can be a learnable parameter if it seems like something worth exploring</p>
   </li>
+  <li>
+    <p>CLIP embedding of the image ? ? - as seen in stable diffusion</p>
+  </li>
 </ol>
 
 <p>One of my colleagues suggested a different approach where you take features from say the middle of the depth estimation network and concat those features to the features extracted from the rgb image. This is also something i consider worth exploring</p>
 
-<p>I feel like a similar approach is being done by Zhang et al. in the <a href="https://arxiv.org/pdf/2302.05543.pdf">ControlNet</a> paper the way they kinda nudge the network towards what they want it to do - i think same results could be achieved in object detection networks as well</p>
-
-<p>If you have any suggestions or critiques on this work feel free to contact me at jeronim96@gmail.com</p>
+<p>I feel like a similar approach is being done by Zhang et al. in the <a href="https://arxiv.org/pdf/2302.05543.pdf">ControlNet</a> paper the way they kinda nudge the network towards what they want it to do - i think same results could be achieved in object detection networks as well
+potential related work: <a href="https://arxiv.org/pdf/2106.02795.pdf">this 24 page paper xd</a>
+If you have any suggestions or critiques on this work feel free to contact me at jeronim96@gmail.com</p>
 
 
       </section>

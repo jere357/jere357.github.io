@@ -95,7 +95,17 @@
 </ul>
 
 <h2 id="projected-gan-for-painting-generation">Projected GAN for painting generation</h2>
-<p>This project was done for the huggan huggingface event. I used the wikiart dataset and trained the projected GAN on it, I also trained/transfer learned a couple of models to my academic painter friends’ paintings that all contained small houses, since she had around ~20 paintings with small houses i was interested in whether that was enough for a GAN to actually learn how to generate such houses since they are all of similair shape. I was also interested in seeing how transfer learning behaved when working with GANs. These results were cool when they came out but models like DALLE2 and stable diffusion are just something else man</p>
+<p>This project was done for the huggan huggingface event. I used the wikiart dataset and trained the projected GAN on it, I also trained/transfer learned a couple of models to my academic painter friends’ paintings that all contained small houses, since she had around ~20 paintings with small houses i was interested in whether that was enough for a GAN to actually learn how to generate such houses since they are all of similair shape. I was also interested in seeing how transfer learning behaved when working with GANs. I have taken some models trained on e.g. abstract expressionism images and and the fine-tuned it to Hana’s houses. The results very neat but this event lasted only 2 weeks i think so i didn’t have time to experiment further / formulate some kind of loss to measure the impact of this transfer learning.</p>
+
+<p>These results were cool when they came out but models like DALLE2 and stable diffusion are just something else man</p>
+
+<p><img src="/assets/img/impressionism.png" alt="impr" width="50%" style="padding-left:25%" /></p>
+
+<p><em>Some cherry picked results from the impressionism model</em></p>
+
+<p><img src="/assets/img/AE_HH.png" alt="hhae" width="50%" style="padding-left:25%" /></p>
+
+<p><em>results from the abstract expressionism model that was trasnfer learned to paint Hana’s houses</em></p>
 
 <ul>
   <li><a href="https://huggingface.co/spaces/huggan/projected_gan_art">huggingface space demo</a></li>
