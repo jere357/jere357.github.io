@@ -47,8 +47,8 @@ I have divided my projects into ones i have done during for my education and one
 - [Must read Karpathy blog on RNNs](https://karpathy.github.io/2015/05/21/rnn-effectiveness/){:width="50%"}
 - [Zero to Hero Karpathy videos](https://karpathy.ai/zero-to-hero.html){:width="50%"}
 - [Funny loss functions blog](https://lossfunctions.tumblr.com/){:width="50%"}
-- [very important research](https://oneweirdkerneltrick.com/){:width="50%"}
-
+- [Very important research](https://oneweirdkerneltrick.com/){:width="50%"}
+- [Comparisons of recent nvidia GPUs for deep learning](https://timdettmers.com/2023/01/30/which-gpu-for-deep-learning/)
 * * *
 
 ## Cool/funny things on the internet
