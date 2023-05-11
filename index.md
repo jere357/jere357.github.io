@@ -3,7 +3,7 @@ layout: default
 ---
 
 # Hello there, I am Jeronim Matijević
-I'm a Graduate student at the University of Zagreb, Faculty of Electrical Engineering and Computing. Currently enrolled in the Computer Science MSc programme. Passionate about neural networks for all purposes.
+I'm a Graduate student at the University of Zagreb, Faculty of Electrical Engineering and Computing. Currently enrolled in the Computer Science MSc programme, advised by Sven Lončarić. Passionate about neural networks for all purposes.
 
 The reason why I created this website is because all the projects listed in my CV were bloating it too much, and I felt that people would skip over it without reading anything. + ngl i always wanted to have a tumblr so i guess this is something like it
 
