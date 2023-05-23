@@ -48,7 +48,8 @@ I have divided my projects into ones i have done during for my education and one
 - [Zero to Hero Karpathy videos](https://karpathy.ai/zero-to-hero.html){:width="50%"}
 - [Funny loss functions blog](https://lossfunctions.tumblr.com/){:width="50%"}
 - [Very important research](https://oneweirdkerneltrick.com/){:width="50%"}
-- [Comparisons of recent nvidia GPUs for deep learning](https://timdettmers.com/2023/01/30/which-gpu-for-deep-learning/)
+- [Comparisons of recent nvidia GPUs for deep learning](https://timdettmers.com/2023/01/30/which-gpu-for-deep-learning/){:width="50%"}
+- [nvidia-smi blogpost](https://www.microway.com/hpc-tech-tips/nvidia-smi_control-your-gpus/){:width="50%"}
 * * *
 
 ## Cool/funny things on the internet
