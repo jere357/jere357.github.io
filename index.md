@@ -55,6 +55,7 @@ I have divided my projects into ones i have done during for my education and one
 ## Cool/funny things on the internet
 - [The next time you want me to explain you GPT4 irl i will tell you to watch this video](https://youtu.be/qbIk7-JPB2c)  -  [this picture predicted it all](./assets/img/addlayers.jpg)
 - [Watchmeforever AI generated TV show](https://twitch.tv/watchmeforever)
+- [Video about about big O definition and speed vs memory tradeoff + some rust propaganda](https://youtu.be/7VHG6Y2QmtM)
 - [DAN adversarial attacks on chatGPT](https://gist.github.com/coolaj86/6f4f7b30129b0251f61fa7baaa881516)
 - [manim](https://www.manim.community/) - very cool library for math visualization, used by 3blue1brown
 - [ezyang blog](http://blog.ezyang.com/)
