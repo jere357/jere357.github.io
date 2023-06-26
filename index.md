@@ -39,9 +39,6 @@ I have divided my projects into ones i have done during for my education and one
 * * * 
 <br>
 
-<details>
-  <summary>Interesting Deep Learning material</summary>
-
 - [Very good + free computer vision "basics" lectures from the University of Columbia](https://fpcv.cs.columbia.edu/){:width="50%"}
 - [MIT course on python, very good course + material](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/){:width="50%"}
 - [Most understandable material on LSTMs](https://colah.github.io/posts/2015-08-Understanding-LSTMs/){:width="50%"}
@@ -55,12 +52,8 @@ I have divided my projects into ones i have done during for my education and one
 - [Comparisons of recent nvidia GPUs for deep learning](https://timdettmers.com/2023/01/30/which-gpu-for-deep-learning/){:width="50%"}
 - [nvidia-smi blogpost](https://www.microway.com/hpc-tech-tips/nvidia-smi_control-your-gpus/){:width="50%"}
 
-</details>
 <br>
 
-
-<details>
-  <summary>Cool/funny things on the internet</summary>
 
 - [The next time you want me to explain you GPT4 irl i will tell you to watch this video](https://youtu.be/qbIk7-JPB2c)  -  [this picture predicted it all](./assets/img/addlayers.jpg)
 - [Watchmeforever AI generated TV show](https://twitch.tv/watchmeforever)
@@ -78,9 +71,6 @@ I have divided my projects into ones i have done during for my education and one
 - [How i sometimes feel about ML research](/assets/img/mrfantastic.png)
 - [Have you tried using ffmpeg?](https://youtu.be/9kaIXkImCAM)
 
-
-
-</details>
 
 <br>
 
