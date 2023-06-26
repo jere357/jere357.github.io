@@ -7,7 +7,7 @@ I'm a Graduate student at the University of Zagreb, Faculty of Electrical Engine
 
 The reason why I created this website is because all the projects listed in my CV were bloating it too much, and I felt that people would skip over it without reading anything. + ngl i always wanted to have a tumblr so i guess this is something like it
 
-Generally I find models bridging the gap between natural language processing and computer vision fascinating. I think CLIP embeddings will become a part of every state-of-the-art computer vision model in the future
+Generally I find models bridging the gap between natural language processing and computer vision fascinating. I'm thrilled to see what we will do with CLIP embeddings in the future.
 
 MLOps is also something I find very interesting.
 
@@ -37,7 +37,11 @@ I have divided my projects into ones i have done during for my education and one
 
 
 * * * 
-## Interesting Deep Learning material 
+<br>
+
+<details>
+  <summary>Interesting Deep Learning material</summary>
+
 - [Very good + free computer vision "basics" lectures from the University of Columbia](https://fpcv.cs.columbia.edu/){:width="50%"}
 - [MIT course on python, very good course + material](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/){:width="50%"}
 - [Most understandable material on LSTMs](https://colah.github.io/posts/2015-08-Understanding-LSTMs/){:width="50%"}
@@ -50,9 +54,14 @@ I have divided my projects into ones i have done during for my education and one
 - [Very important research](https://oneweirdkerneltrick.com/){:width="50%"}
 - [Comparisons of recent nvidia GPUs for deep learning](https://timdettmers.com/2023/01/30/which-gpu-for-deep-learning/){:width="50%"}
 - [nvidia-smi blogpost](https://www.microway.com/hpc-tech-tips/nvidia-smi_control-your-gpus/){:width="50%"}
-* * *
 
-## Cool/funny things on the internet
+</details>
+<br>
+
+
+<details>
+  <summary>Cool/funny things on the internet</summary>
+
 - [The next time you want me to explain you GPT4 irl i will tell you to watch this video](https://youtu.be/qbIk7-JPB2c)  -  [this picture predicted it all](./assets/img/addlayers.jpg)
 - [Watchmeforever AI generated TV show](https://twitch.tv/watchmeforever)
 - [Video about about big O definition and speed vs memory tradeoff + some rust propaganda](https://youtu.be/7VHG6Y2QmtM)
@@ -68,6 +77,12 @@ I have divided my projects into ones i have done during for my education and one
 - [programemezzz](https://instagram.com/programemezzz)
 - [How i sometimes feel about ML research](/assets/img/mrfantastic.png)
 - [Have you tried using ffmpeg?](https://youtu.be/9kaIXkImCAM)
+
+
+
+</details>
+
+<br>
 
 ## Life Goals
 - To own a small boat
