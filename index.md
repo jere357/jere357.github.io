@@ -39,6 +39,8 @@ I have divided my projects into ones i have done during for my education and one
 * * * 
 <br>
 
+
+## Interesting Deep Learning material
 - [Very good + free computer vision "basics" lectures from the University of Columbia](https://fpcv.cs.columbia.edu/){:width="50%"}
 - [MIT course on python, very good course + material](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/){:width="50%"}
 - [Most understandable material on LSTMs](https://colah.github.io/posts/2015-08-Understanding-LSTMs/){:width="50%"}
@@ -54,6 +56,7 @@ I have divided my projects into ones i have done during for my education and one
 
 <br>
 
+## Cool/funny things on the internet
 
 - [The next time you want me to explain you GPT4 irl i will tell you to watch this video](https://youtu.be/qbIk7-JPB2c)  -  [this picture predicted it all](./assets/img/addlayers.jpg)
 - [Watchmeforever AI generated TV show](https://twitch.tv/watchmeforever)
