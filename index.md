@@ -50,7 +50,7 @@ I have divided my projects into ones i have done during for my education and one
 * [Very important research](https://oneweirdkerneltrick.com/){:width="50%"}
 * [Comparisons of recent nvidia GPUs for deep learning](https://timdettmers.com/2023/01/30/which-gpu-for-deep-learning/){:width="50%"}
 * [nvidia-smi blogpost](https://www.microway.com/hpc-tech-tips/nvidia-smi_control-your-gpus/){:width="50%"}
-
+* [blogpost about demystifying RAM usage in multiprocess pytorch dataloaders](https://ppwwyyxx.com/blog/2022/Demystify-RAM-Usage-in-Multiprocess-DataLoader/)
 <br>
 
 ## Cool/funny things on the internet
