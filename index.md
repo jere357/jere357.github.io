@@ -17,8 +17,8 @@ MLOps is also something I find very interesting.
 ## Fields of interest
 
 * Computer vision
-* Generative models
-* Neural radiance fields [[0](https://docs.google.com/presentation/d/1oIZTKTSz7aFHnwCLi9jz3cN3LDLKccZiHjNuqeD-yYs/edit?usp=sharing)]
+* Generative models [[0](https://docs.google.com/presentation/d/1mnwzmGJhGYygE8rrRK8feUJd4PdzHKAE7OLm78Gbfvs/edit?usp=sharing)]
+* Neural radiance fields [[1](https://docs.google.com/presentation/d/1oIZTKTSz7aFHnwCLi9jz3cN3LDLKccZiHjNuqeD-yYs/edit?usp=sharing)]
 * Depth estimation
 
 * * *

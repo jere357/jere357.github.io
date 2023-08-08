@@ -19,18 +19,18 @@ This project was done for the huggan huggingface event. I used the wikiart datas
 
 These results were cool when they came out but models like DALLE2 and stable diffusion are just something else man
 
-![impr](/assets/img/impressionism.png){:width="50%"  style="padding-left:25%"}
+![impr](/assets/img/impressionism.png){:width="80%"}
 
 *Some cherry picked results from the impressionism model*
 
-![hhae](/assets/img/AE_HH.png){:width="50%"  style="padding-left:25%"}
+![hhae](/assets/img/AE_HH.png){:width="80%"}
 
 *Results from the abstract expressionism model that was transfer learned to paint Hana's houses*
 
-By the way! this space was displayed alongside some of Hana's work at a gallery in Labin, Croatia :D
+By the way! this huggingface space was displayed alongside some of Hana's work at a gallery in Labin, Croatia :D
 The outputs from the original Projected GAN were 256x256, that was too small to be displayed on a projector, so i upscaled them with ESRGAN to look prettier on a big screen, it worked out nice.
 
-![check it outtt](/assets/img/hanagalerija.jpg){:width="50%"  style="padding-left:25%"}
+![check it outtt](/assets/img/hanagalerija.jpg){:width="80%"}
 
 * [huggingface space demo](https://huggingface.co/spaces/huggan/projected_gan_art)
 * [Instagram link where you can see some of her work](https://www.instagram.com/hanaqhanak)
