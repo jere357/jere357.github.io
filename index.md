@@ -10,8 +10,6 @@ The reason why I created this website is because all the projects listed in my C
 
 Generally I find models bridging the gap between natural language processing and computer vision fascinating. I'm thrilled to see what we will do with CLIP embeddings in the future.
 
-MLOps is also something I find very interesting.
-
 * * *
 
 ## Fields of interest
@@ -29,7 +27,7 @@ I have divided my projects into ones i have done during for my education and one
 
 1. [Some of my still unfinished research](./research.html)
 
-2. [Some of my hobby projects](./hobby_projects.html).
+2. [Deep learning hobby projects](./hobby_projects.html).
 
 3. [Short overview of my Deep Learning university projects](./university_projects.html).
 
@@ -51,11 +49,12 @@ I have divided my projects into ones i have done during for my education and one
 * [Comparisons of recent nvidia GPUs for deep learning](https://timdettmers.com/2023/01/30/which-gpu-for-deep-learning/){:width="50%"}
 * [nvidia-smi blogpost](https://www.microway.com/hpc-tech-tips/nvidia-smi_control-your-gpus/){:width="50%"}
 * [blogpost about demystifying RAM usage in multiprocess pytorch dataloaders](https://ppwwyyxx.com/blog/2022/Demystify-RAM-Usage-in-Multiprocess-DataLoader/)
+* [Spark of AGI talk by Sebastian Bubeck](https://youtu.be/qbIk7-JPB2c)  -  this [picture](./assets/img/addlayers.jpg) predicted it all
+
 <br>
 
 ## Cool/funny things on the internet
 
-* [The next time you want me to explain you GPT4 irl i will tell you to watch this video](https://youtu.be/qbIk7-JPB2c)  -  this [picture](./assets/img/addlayers.jpg) predicted it all
 * [Watchmeforever AI generated TV show](https://twitch.tv/watchmeforever)
 * [Video about about big O definition and speed vs memory tradeoff + some rust propaganda](https://youtu.be/7VHG6Y2QmtM)
 * [DAN adversarial attacks on chatGPT](https://gist.github.com/coolaj86/6f4f7b30129b0251f61fa7baaa881516)

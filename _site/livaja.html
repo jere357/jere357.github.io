@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+  <head>
+    <title>
+      Jere's web
+    </title>
+    <link rel="icon" type="image/x-icon" href="/assets/img/pinky.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Figure 1. Jeronim with his 1070TI GPU, that has fans from aliexpress that don’t really fit so he has to reapply the duct tape every now and then." />
+<meta property="og:description" content="Figure 1. Jeronim with his 1070TI GPU, that has fans from aliexpress that don’t really fit so he has to reapply the duct tape every now and then." />
+<link rel="canonical" href="http://localhost:4000/livaja.html" />
+<meta property="og:url" content="http://localhost:4000/livaja.html" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Figure 1. Jeronim with his 1070TI GPU, that has fans from aliexpress that don’t really fit so he has to reapply the duct tape every now and then.","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/ja.jpeg"}},"url":"http://localhost:4000/livaja.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style2.css?v=">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+    
+    <!-- for mathjax support -->
+    
+    
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <section>
+
+      <p><a href="./index.html">Home</a> / <a href="./blog_index.html">Blog</a></p>
+
+<h1 id="generating-livaja-with-a-champions-league-trophy-using-dreambooth">Generating Livaja with a champion’s league trophy using dreambooth.</h1>
+
+<p>It was another 2nd place finish in the national league, i just wanted to see my favorite player holding the champions league trophy.</p>
+
+<p>This project started as an idea to see wether it was possible to finetune a stable diffusion model so it could generate a soccer player holding he champions league trophy.</p>
+
+<p>First i wanted to see what does stable diffusion know about SOCCER players, football players would be generated as american football players indicating a regional bias in the annotations. And whether it knows what the UEFA champion’s league trophy looks like.</p>
+
+<h2 id="obcnmi-stable-diffusion-rezultati">obcnmi stable diffusion rezultati</h2>
+
+<p>soccer player
+soccer player holding a trophy
+uefa champions league trophy</p>
+
+<p>These results were a good enough starting points for my dreambooth journey.
+The questions was: Can the model learn both Marko Livaja and the UCL trophy, and how?
+Initial experiments with the basic dreambooth instance/class prompts such as “photo of a sks soccer player” and “photo of a soccer player” weren’t good enough</p>
+
+<h2 id="obicni-dataset-eskpaci">obicni dataset eskpaci</h2>
+
+<p>I went on a mission to create a dataset of ~250 images containing player holding the trophy. They are going to be used as class images in the dataset where the class is “a soccer player holding a UEFA champion’s league trophy”. The instance prompt inm this case would be “a sks soccer player with no trophy”. These 2 prompts combined with the enw dataset yielded pretty good results! THen i went to see which baseline stable diffusion model i liked the most for this task, it was stabilityAI2.0</p>
+
+<h2 id="runwaymlstabilitaicompvis">runwayml/stabilitai/compvis</h2>
+
+<p>Since this was my first time running things on stable diffusion models i wanted to see for how much of a difference things like schedulers, num_steps and varations in the prompts made.</p>
+
+<h2 id="differente-schedulers">differente schedulers</h2>
+
+<h2 id="does-a-photo-of-part-of-the-prompt-even-do-anything">does ‘a photo of’ part of the prompt even do anything?</h2>
+
+<p><em>yay</em></p>
+
+<p><a href="./">back</a></p>
+
+
+      </section>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+  </body>
+</html>

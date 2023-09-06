@@ -1,11 +1,11 @@
 ---
-layout: default
+layout: default_blog
 ---
 [Home](./)
 
 # University projects w/ deep learning
 
-In this document, I showcase several deep learning projects that I completed during my time as a university student. These projects cover a variety of applications in natural language processing, computer vision, and generative modeling.
+In this document, I showcase several deep learning/machine learning projects that I completed during my time as a university student. These projects cover a variety of applications in natural language processing, computer vision, and generative modeling.
 
 
 ## Method for People Counting From Image Sequence

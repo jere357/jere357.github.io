@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
   <head>
+    <title>
+      Jere's web
+    </title>
+    <link rel="icon" type="image/x-icon" href="/assets/img/pinky.png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>LoGT</title>
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:title" content="LoGT" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Figure 1. Jeronim with his 1070TI GPU, that has fans from aliexpress that don’t really fit so he has to reapply the duct tape every now and then." />
+<meta property="og:description" content="Figure 1. Jeronim with his 1070TI GPU, that has fans from aliexpress that don’t really fit so he has to reapply the duct tape every now and then." />
+<link rel="canonical" href="http://localhost:4000/logt.html" />
+<meta property="og:url" content="http://localhost:4000/logt.html" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="LoGT" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Figure 1. Jeronim with his 1070TI GPU, that has fans from aliexpress that don’t really fit so he has to reapply the duct tape every now and then.","headline":"LoGT","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/ja.jpeg"}},"url":"http://localhost:4000/logt.html"}</script>
+<!-- End Jekyll SEO tag -->
+
     <link rel="stylesheet" href="/assets/css/style2.css?v=">
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -30,6 +51,7 @@
   <body>
     <div class="wrapper">
       <section>
+
       <p><a href="./index.html">Home</a> / <a href="./research.html">Research</a></p>
 
 <ul>
@@ -67,7 +89,7 @@ I will try to explain this code here</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">overlap</span><span class="p">(</span><span class="n">line</span><span class="p">,</span> <span class="n">ground_truth_bbox</span><span class="p">):</span>
     <span class="c1">#assume that ground truth bounding boxes are defined with 2 points, bottom-left and top-right
 </span>    <span class="c1">#we say that a line overlaps a bounding box if its y coordinate is between the the two y coordinates of the bounding box
-</span>    <span class="k">if</span> <span class="n">ground_truth_bbox</span><span class="p">.</span><span class="n">y1</span> <span class="o">&lt;</span> <span class="n">line</span><span class="p">.</span><span class="n">y</span> <span class="o">&lt;</span> <span class="n">ground_truth_bbox</span><span class="p">.</span><span class="n">y2</span>
+</span>    <span class="k">if</span> <span class="n">ground_truth_bbox</span><span class="p">.</span><span class="n">y1</span> <span class="o">&lt;</span> <span class="n">line</span><span class="p">.</span><span class="n">y</span> <span class="o">&lt;</span> <span class="n">ground_truth_bbox</span><span class="p">.</span><span class="n">y2</span><span class="p">:</span>
         <span class="k">return</span> <span class="bp">True</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="k">return</span> <span class="bp">False</span>
@@ -98,7 +120,7 @@ This is how we want the LoGT matrix to look like after the algorithm runs on the
 \end{bmatrix}\]
 
 <p style="text-align: center">The above written pseudocode will behave like this</p>
-<p style="text-align: center"><img src="./assets/img/manimgodx.gif" alt="videozi" width="50%" /><br />
+<p style="text-align: center"><img src="./assets/img/manimgodx.gif" alt="videozi" width="80%" /><br />
 <em>This gif visually emulates how the algorithm behaves</em></p>
 
 <p>Notice that the third row is filled with zeroes, that is the false positive bounding box (index=2). Now We need to pad the matrix with null-columns until it is square. This lowers the score for the false predictions. Keep in mind that situation such as shelf 3 and 4 can be avoided in the yolo architecture by setting the non-maximum-supression IoU threshold to be very low.</p>

@@ -1,9 +1,11 @@
 ---
-layout: default2
+layout: default_blog
+
 title: LoGT
 ---
 
 [Home](./index.html) / [Research](./research.html)
+
 
 - [Line Over Ground Truth loss](#line-over-ground-truth-loss)
   - [1. Introduction](#1-introduction)
@@ -38,7 +40,7 @@ The First thing to do is deconstruct the prediction bounding boxes into lines, t
 def overlap(line, ground_truth_bbox):
     #assume that ground truth bounding boxes are defined with 2 points, bottom-left and top-right
     #we say that a line overlaps a bounding box if its y coordinate is between the the two y coordinates of the bounding box
-    if ground_truth_bbox.y1 < line.y < ground_truth_bbox.y2
+    if ground_truth_bbox.y1 < line.y < ground_truth_bbox.y2:
         return True
     else:
         return False
@@ -72,7 +74,7 @@ $$
 
 The above written pseudocode will behave like this
 {:style="text-align: center"}
-![videozi](./assets/img/manimgodx.gif){:width="50%"}\
+![videozi](./assets/img/manimgodx.gif){:width="80%"}\
 *This gif visually emulates how the algorithm behaves*
 {:style="text-align: center"}
 

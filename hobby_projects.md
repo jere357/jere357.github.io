@@ -1,11 +1,12 @@
 ---
-layout: default
+layout: default_blog
 ---
 
 [Home](./)
 # Hobby projects
 
 In this document, I showcase several projects that I made in my free time, 2 of them were parts of huggingface sprints which are awesome events i suggest you to check them out
+
 
 ## World of Warcraft fishing bot
 
@@ -23,7 +24,7 @@ These results were cool when they came out but models like DALLE2 and stable dif
 
 *Some cherry picked results from the impressionism model*
 
-![hhae](/assets/img/AE_HH.png){:width="80%"}
+![hhae](/assets/img/AE_HH.png){:width="80%" :style="padding-left:25%"}
 
 *Results from the abstract expressionism model that was transfer learned to paint Hana's houses*
 
