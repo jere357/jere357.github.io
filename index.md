@@ -4,32 +4,36 @@ layout: default
 
 # Hello there, I am Jeronim Matijević
 
-I'm a Graduate student at the University of Zagreb, Faculty of Electrical Engineering and Computing. Currently enrolled in the Computer Science MSc programme, advised by Sven Lončarić. Passionate about neural networks for all purposes.
+I am currently working as a research engineer at [tensorpix.](https://tensorpix.ai/) We are developing models for video superresolution and video restoration.
+How it feels when your multiple discriminator GAN doen't diverge into NaNs: [me](./assets/img/muaddib.jpg)
 
-The reason why I created this website is because all the projects listed in my CV were bloating it too much, and I felt that people would skip over it without reading anything. + ngl i always wanted to have a tumblr so i guess this is something like it
 
-Generally I find models bridging the gap between natural language processing and computer vision fascinating. I'm thrilled to see what we will do with CLIP embeddings in the future.
+I consider computer vision my main field of interest. I have read papers on its subfields such as image/video restoration, object detection, depth estimation, neural radiance fields and GANs
 
-* * *
-
-## Fields of interest
-
-* Computer vision
-* Generative models [[0](https://docs.google.com/presentation/d/1mnwzmGJhGYygE8rrRK8feUJd4PdzHKAE7OLm78Gbfvs/edit?usp=sharing)]
-* Neural radiance fields [[1](https://docs.google.com/presentation/d/1oIZTKTSz7aFHnwCLi9jz3cN3LDLKccZiHjNuqeD-yYs/edit?usp=sharing)]
-* Depth estimation
+Big fan of CLIP
 
 * * *
 
-# My projects
+# My ML blog 
 
-I have divided my projects into ones i have done during for my education and ones i have done in my free time + things i want to research
+On the link below you can find my ML blog + short comments on various deep learning projects i have done over the years, reach out about anything if you have any questions
 
-1. [Some of my still unfinished research](./research.html)
+## [Blog](./blog_index.html)
 
-2. [Deep learning hobby projects](./hobby_projects.html).
 
-3. [Short overview of my Deep Learning university projects](./university_projects.html).
+* * *
+
+# Slides 
+I sometimes talk about ML papers, 
+If i told you you can find the slides on my site, here they are. Most of these, but not all are from our paperclub
+
+[wtF are NeRFs?](https://docs.google.com/presentation/d/1oIZTKTSz7aFHnwCLi9jz3cN3LDLKccZiHjNuqeD-yYs/edit?usp=sharing)
+
+[Masked Autoencoders](https://docs.google.com/presentation/d/1LE92h1_r6c-MgxlPfZHtqVNlU3oj63pJTSHLOPNw_DU/edit?usp=sharing)
+
+[Lottery ticket hypothesis, but actually the Han et al. pruning paper](https://docs.google.com/presentation/d/1o908FlzGE0InSQPqUMgLarzujLVEp5lXjuq4qggCKsE/edit?usp=sharing)
+
+[Dreambooth](https://docs.google.com/presentation/d/1mnwzmGJhGYygE8rrRK8feUJd4PdzHKAE7OLm78Gbfvs/edit?usp=sharing)
 
 * * *
 <br>
@@ -45,7 +49,6 @@ I have divided my projects into ones i have done during for my education and one
 * [Must read Karpathy blog on RNNs](https://karpathy.github.io/2015/05/21/rnn-effectiveness/){:width="50%"}
 * [Zero to Hero Karpathy videos](https://karpathy.ai/zero-to-hero.html){:width="50%"}
 * [Funny loss functions blog](https://lossfunctions.tumblr.com/){:width="50%"}
-* [Very important research](https://oneweirdkerneltrick.com/){:width="50%"}
 * [Comparisons of recent nvidia GPUs for deep learning](https://timdettmers.com/2023/01/30/which-gpu-for-deep-learning/){:width="50%"}
 * [nvidia-smi blogpost](https://www.microway.com/hpc-tech-tips/nvidia-smi_control-your-gpus/){:width="50%"}
 * [blogpost about demystifying RAM usage in multiprocess pytorch dataloaders](https://ppwwyyxx.com/blog/2022/Demystify-RAM-Usage-in-Multiprocess-DataLoader/)
@@ -53,19 +56,16 @@ I have divided my projects into ones i have done during for my education and one
 
 <br>
 
-## Cool/funny things on the internet
+## misc stuff on the internet
 
-* [Watchmeforever AI generated TV show](https://twitch.tv/watchmeforever)
-* [Video about about big O definition and speed vs memory tradeoff + some rust propaganda](https://youtu.be/7VHG6Y2QmtM)
-* [DAN adversarial attacks on chatGPT](https://gist.github.com/coolaj86/6f4f7b30129b0251f61fa7baaa881516)
 * [manim](https://www.manim.community/) - very cool library for math visualization, used by 3blue1brown
-* [ezyang blog](http://blog.ezyang.com/)
+* [dingboard](https://dingboard.com/)
 * [jspaint](https://jspaint.app)
+* [Very important research](https://oneweirdkerneltrick.com/){:width="50%"}
 * [Vaisko](https://www.vaisko.com)
 * [Smile.rip](https://smile.rip/)
 * [marulianus.hr](http://marulianus.hr)
 * [Auralnauts](https://youtu.be/WSCm8yAxBr8)
-* [Seppo Linnainmaa wikipedia page](https://en.wikipedia.org/wiki/Seppo_Linnainmaa) - this guy implemented backprop in fortran in 1970 as his msc thesis
 * [programemezzz](https://instagram.com/programemezzz)
 * [How i sometimes feel about ML research](/assets/img/mrfantastic.png)
 * [Have you tried using ffmpeg?](https://youtu.be/9kaIXkImCAM)
@@ -76,3 +76,4 @@ I have divided my projects into ones i have done during for my education and one
 ## Life Goals
 
 * To own a small boat
+* Hold a computer vision course at Kopilica

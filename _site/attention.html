@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<html lang="en-US">
+  <head>
+    <title>
+      Jere's web
+    </title>
+    <link rel="icon" type="image/x-icon" href="/assets/img/pinky.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Figure 1. Jeronim with his 1070TI GPU, that has fans from aliexpress that don’t really fit so he has to reapply the duct tape every now and then." />
+<meta property="og:description" content="Figure 1. Jeronim with his 1070TI GPU, that has fans from aliexpress that don’t really fit so he has to reapply the duct tape every now and then." />
+<link rel="canonical" href="http://localhost:4000/attention.html" />
+<meta property="og:url" content="http://localhost:4000/attention.html" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Figure 1. Jeronim with his 1070TI GPU, that has fans from aliexpress that don’t really fit so he has to reapply the duct tape every now and then.","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/ja.jpeg"}},"url":"http://localhost:4000/attention.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style2.css?v=">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+    
+    <!-- for mathjax support -->
+    
+    
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+    
+    <style>
+      /* Dark mode styles */
+      body.dark-mode {
+        background-color: #222; /* Dark background color */
+        color: #ccc; /* Light text color */
+      }
+
+
+      body.dark-mode p, 
+      body.dark-mode a,
+      body.dark-mode h1,
+      body.dark-mode h2,
+      body.dark-mode h3 {
+        color: #ccc; /* Text color for paragraphs, links, h1, and h3 */
+      }
+
+      /* Set color for links */
+      body.dark-mode a {
+    color: rgba(96, 138, 230, 0.795); /* Set link color to blue */
+  }
+    </style>
+  </head>
+  <body class="dark-mode">
+    <div class="wrapper">
+      <section>
+        <p><a href="./">Home</a> / <a href="./blog_index.html">Blog</a></p>
+
+<h1 id="attention">Attention</h1>
+
+<p>This is a post containing all the useful resources I’ve found on attention, Every one of these starts with machine translation from RNNs-&gt;attention-&gt;transformers, I suggest getting a good understanding of how what and why about every part of that process. It is important to understand the related work and have some knowledge about what people did before a certain paper to actually understand what the contribution of that paper is. Without linking too many things i think <a href="https://arxiv.org/abs/1409.0473">this</a> is the most important one.</p>
+
+<p>Be sure to remember that the agreement on the European Economic Area was signed in August 1992 :D.</p>
+
+<h2 id="videos-of-lecturestalks-about-transformers">Videos of lectures/talks about transformers</h2>
+
+<p><a href="https://youtu.be/YAgjfMR9R_M?si=iykBUf-_LOBQOup6">EXCELLENT lecture on self attention and the math behind it.</a> The lecturer here is the first author of <a href="https://arxiv.org/pdf/1603.08155.pdf">Perceptual Losses for Real-Time Style Transfer and Super-Resolution</a> :)). This video is just so good, watch it, watch the entire class if you’re interested about deep learning for computer vision, this guy can’t miss.</p>
+
+<p><a href="https://jalammar.github.io/illustrated-transformer/">Simply amazing blog post about the transformer architecture with 10/10 animations</a> I am not the first person to tell you to read this blog, and certainly not the last :). You can just see that a lot of time went into perfecting the animations on this blog, they turned out great!</p>
+
+<p><a href="https://youtu.be/UpfcyzoZ644?si=qBz7E_zDnIZGhTi2">One of the authors of the ViT paper talking about attention and ViTs</a> this talk is very good</p>
+
+<p><a href="https://youtu.be/OyFJWRnt_AY?si=f7DytNpH1SLmwfzU">This lecture goes explains the intuition behind Q K V</a> good stuff!</p>
+
+<p><a href="https://youtu.be/rBCqOTEfxvg?si=VQgiywXncHsgoLf2">Łukasz Kaiser talking about attention</a>, cool talk but does not go into technical details that much, really good vibes</p>
+
+<p><a href="https://youtu.be/udY0GlYXXbE?si=IO1Y1qNMyvfCdizH">CVPR21 talk from one of the SWIN authors about SWIN and attention for computer vision</a></p>
+
+<h1 id="attention-in-computer-vision">Attention in computer vision</h1>
+
+<p>Here I’ll try to link papers I’ve read where people used attention mechanisms in computer vision before ViTs.</p>
+
+<h2 id="residual-attention-network-for-image-classification"><a href="https://arxiv.org/abs/1704.06904">Residual Attention Network for Image Classification</a></h2>
+<p>This is the paper that kinda detached attention from RNNs/LSTMs and tried applying it to ordinary CNNs, a novel usage of attention on features deep in conv networks.</p>
+
+<p><a href="https://youtu.be/gezTiN1zGXE?si=V5yPCgVYbapUb36A">Short video from the Applied Deep Learning, University of Colorado course</a> Very good course that covers just about anything regarding deep learning + papers. Seriously, write name of paper + applied deep learning into the youtube search and chances are a video from this course exists :D</p>
+
+<h2 id="squeeze-and-excitation-networks-senet"><a href="https://arxiv.org/abs/1709.01507">Squeeze-and-Excitation Networks (SENet)</a></h2>
+<p>This paper is similair to the paper above, but here they limit the attention mechanism to only attend to channel features, instead of both channel and spatial features, which requires significantly less computational resources</p>
+
+<p><a href="https://www.youtube.com/watch?v=BSZqvObJVMg&amp;list=PLoEMreTa9CNlNS05sA25FubXew0w33rwq">another short video from the Applied Deep Learning, University of Colorado course.</a></p>
+
+<h2 id="cbam-convolutional-block-attention-module"><a href="https://arxiv.org/abs/1807.06521">CBAM: Convolutional Block Attention Module</a></h2>
+<p>The older brother of SENet and the first paper, CBAM. Theoretically it should be superior to them. I didn’t have any luck using it in my networks. This paper applies channel attention and spatial attention sequentially, instead of all at once like they do in the first paper i linked.</p>
+
+<p><a href="https://youtu.be/Co-bXmn8vYc?si=HzP06TgxCVITp6c9">another one </a></p>
+
+<h2 id="spatial-transformer"><a href="https://arxiv.org/abs/1506.02025">Spatial transformer</a></h2>
+<p>An old deepmind paper with a good concept and results, but i don’t think this approach really aligns with the way people use “transformer” as a word today <a href="https://www.youtube.com/watch?v=X99zkHNqTMU">nips talk</a></p>
+
+<p><a href="https://youtu.be/25dO4fLhEMY?si=yKIGELbR9153MKyh">You guessed it</a></p>
+
+<h2 id="rcan"><a href="https://arxiv.org/abs/1807.02758">RCAN</a></h2>
+<p>Using channel attention in a superresolution network.</p>
+
+<p>After all this ViTs came, people started tokenizing images and getting better results. There is <a href="https://arxiv.org/abs/2309.05239">HAT</a> which uses a channel attention block alongside swin’s MSA for slightly better results at a significant cost in parameters. I will probably write about ViTs in a separate post</p>
+
+      </section>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+  </body>
+</html>

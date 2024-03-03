@@ -2,7 +2,7 @@
 layout: default_blog
 ---
 
-[Home](./index.html) / [Research](./research.html)
+[Home](./index.html) / [Research](./research.html) / [Blog](./blog_index.html)
 
 - [RGBD object detection]()
   - [0. Motivation](#0-motivation)

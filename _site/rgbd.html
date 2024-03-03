@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html lang="en-US">
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-
+<html lang="en-US">
   <head>
     <title>
       Jere's web
@@ -10,8 +9,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!-- Begin Jekyll SEO tag v2.8.0 -->
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.2" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Figure 1. Jeronim with his 1070TI GPU, that has fans from aliexpress that don’t really fit so he has to reapply the duct tape every now and then." />
@@ -44,12 +42,33 @@
 
 <!-- end custom head snippets -->
 
+    
+    <style>
+      /* Dark mode styles */
+      body.dark-mode {
+        background-color: #222; /* Dark background color */
+        color: #ccc; /* Light text color */
+      }
+
+
+      body.dark-mode p, 
+      body.dark-mode a,
+      body.dark-mode h1,
+      body.dark-mode h2,
+      body.dark-mode h3 {
+        color: #ccc; /* Text color for paragraphs, links, h1, and h3 */
+      }
+
+      /* Set color for links */
+      body.dark-mode a {
+    color: rgba(96, 138, 230, 0.795); /* Set link color to blue */
+  }
+    </style>
   </head>
-  <body>
+  <body class="dark-mode">
     <div class="wrapper">
       <section>
-
-      <p><a href="./index.html">Home</a> / <a href="./research.html">Research</a></p>
+        <p><a href="./index.html">Home</a> / <a href="./research.html">Research</a> / <a href="./blog_index.html">Blog</a></p>
 
 <ul>
   <li><a href="">RGBD object detection</a>
@@ -98,7 +117,6 @@
 <p>I feel like a similar approach is being done by Zhang et al. in the <a href="https://arxiv.org/pdf/2302.05543.pdf">ControlNet</a> paper the way they kinda nudge the network towards what they want it to do - i think same results could be achieved in object detection networks as well
 potential related work: <a href="https://arxiv.org/pdf/2106.02795.pdf">this 24 page paper xd</a>
 If you have any suggestions or critiques on this work feel free to contact me at jeronim96@gmail.com</p>
-
 
       </section>
     </div>

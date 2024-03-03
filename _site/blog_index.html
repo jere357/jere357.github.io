@@ -10,8 +10,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!-- Begin Jekyll SEO tag v2.8.0 -->
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.2" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Figure 1. Jeronim with his 1070TI GPU, that has fans from aliexpress that don’t really fit so he has to reapply the duct tape every now and then." />
@@ -44,8 +43,37 @@
 
 <!-- end custom head snippets -->
 
-  </head>
-  <body>
+    <style>
+      /* Dark mode styles */
+      body.dark-mode {
+        background-color: #222; /* Dark background color */
+        color: #ccc; /* Light text color */
+      }
+      body.dark-mode header {
+        /* Remove specific color definition for header to inherit from body */
+        /* background-color: #333; */
+      }
+      body.dark-mode p, 
+      body.dark-mode a,
+      body.dark-mode h1,
+      body.dark-mode h2,
+      body.dark-mode h3 {
+        color: #ccc; /* Text color for paragraphs, links, h1, and h3 */
+      }
+      /* Adjust sidebar colors */
+      body.dark-mode .downloads li a {
+        color: #ccc; /* Text color for sidebar links */
+      }
+      body.dark-mode .downloads li a:hover {
+        color: #fff; /* Text color for sidebar links on hover */
+      }
+        /* Set color for links */
+  body.dark-mode a {
+    color: rgba(96, 138, 230, 0.795); /* Set link color to blue */
+  }
+    </style>
+      </head>
+  <body class="dark-mode">
     <div class="wrapper">
       <header>
         
@@ -88,17 +116,39 @@
       </header>
       <section>
 
-      <p><a href="./">home</a></p>
+      <p><a href="./">Home</a></p>
 
-<h2 id="deep-learning-projects-index-page">Deep learning projects index page</h2>
+<h2 id="blog-index">Blog index</h2>
 
-<p>On this page you can find some of my university deep learning projects, a short review of some of my hobby projects, and my ML BLOG!!, in this blog i will write about my research, the things you can do with deep learning as well as some other similairly themed blogposts.</p>
+<p>Welcome to my blog, here i will sometimes write posts about things that are related to deep learning.</p>
 
-<p>Posts:</p>
+<ol>
+  <li>
+    <p><a href="./attention.html">A comprehensive list of resources from which to learn about attention</a></p>
+  </li>
+  <li>
+    <p><a href="./nvidia_fan_speed.html">Manually setting fan speeds on a multi-gpu, no-screen ubuntu server machine</a></p>
+  </li>
+  <li>
+    <p><a href="./vscode.html">How i like using VSCode for computer vision</a></p>
+  </li>
+</ol>
 
-<p><a href="./livaja.html">generating Livaja with dreambooth</a></p>
+<h2 id="deep-learning-projects-index">Deep learning projects index</h2>
 
-<p><em>yay</em></p>
+<p>This is basically an extension of my CV, where i go a bit more in depth about things</p>
+
+<ol>
+  <li>
+    <p><a href="./hobby_projects.html">Deep learning hobby projects</a>.</p>
+  </li>
+  <li>
+    <p><a href="./research.html">Unifinshed research from when i used to work at FER</a></p>
+  </li>
+  <li>
+    <p><a href="./university_projects.html">Short overview of my Deep Learning university projects</a>.</p>
+  </li>
+</ol>
 
 
       </section>
