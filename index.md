@@ -8,8 +8,6 @@ I am currently working as a research engineer at [tensorpix.](https://tensorpix.
 How it feels when your multiple discriminator GAN doen't diverge into NaNs: [me](./assets/img/muaddib.jpg)
 
 
-I consider computer vision my main field of interest. I have read papers on its subfields such as image/video restoration, object detection, depth estimation, neural radiance fields and GANs
-
 Big fan of CLIP
 
 * * *
