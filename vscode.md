@@ -33,7 +33,7 @@ That's it, that's the entire blogpost. I hope you found this useful, and this he
 
 I also like keeping track of tensor shapes while debugging my networks, you can also do that so you know what you're dealing with every line of the code.
 
-I also like this approach when im experimenting with a new architecture, breakpoint every line of code in the forward pass and just track the shapes from one line to another, makes it much easier to understand what's going on, especially when the source code doesn't have tensor shapes as comments :)
+I like this approach when I'm experimenting with a new architecture, breakpoint every line of code in the forward pass and just track the shapes from one line to another, makes it much easier to understand what's going on, especially when the source code doesn't have tensor shapes as comments :)
 
 ![image](assets/img/vscode3.jpg){:width="60%"}
 

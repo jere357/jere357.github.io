@@ -10,15 +10,13 @@ This is a post containing all the useful resources I've found on attention, Ever
 
 Be sure to remember that the agreement on the European Economic Area was signed in August 1992 :D.
 
-## Video lectures/talks covering the transformer architecture/layer:
-These begin ordered by how much i like the lecture and then descend into randomness
-
+## Videos of lectures/talks about transformers
 
 [EXCELLENT lecture on self attention and the math behind it.](https://youtu.be/YAgjfMR9R_M?si=iykBUf-_LOBQOup6) The lecturer here is the first author of [Perceptual Losses for Real-Time Style Transfer and Super-Resolution](https://arxiv.org/pdf/1603.08155.pdf) :)). This video is just so good, watch it, watch the entire class if you're interested about deep learning for computer vision, this guy can't miss.
 
 [Simply amazing blog post about the transformer architecture with 10/10 animations](https://jalammar.github.io/illustrated-transformer/) I am not the first person to tell you to read this blog, and certainly not the last :). You can just see that a lot of time went into perfecting the animations on this blog, they turned out great!
 
-[One of the authors of the ViT paper and a well-renowned twitterhead talking about attention and ViTs](https://youtu.be/UpfcyzoZ644?si=qBz7E_zDnIZGhTi2) this talk is very good 
+[One of the authors of the ViT paper talking about attention and ViTs](https://youtu.be/UpfcyzoZ644?si=qBz7E_zDnIZGhTi2) this talk is very good 
 
 [This lecture goes explains the intuition behind Q K V](https://youtu.be/OyFJWRnt_AY?si=f7DytNpH1SLmwfzU) good stuff!
 
@@ -45,7 +43,7 @@ This paper is similair to the paper above, but here they limit the attention mec
 
 
 ## [CBAM: Convolutional Block Attention Module](https://arxiv.org/abs/1807.06521)
-The older brother of SENet, CBAM. Theoretically it should be superior to SENet, but I didn't have any luck using it in my networks. This paper applies channel attention and spatiala ttention sequentially, instead of all at once like they do in the first paper i linked.
+The older brother of SENet and the first paper, CBAM. Theoretically it should be superior to them. I didn't have any luck using it in my networks. This paper applies channel attention and spatial attention sequentially, instead of all at once like they do in the first paper i linked.
 
 [another one ](https://youtu.be/Co-bXmn8vYc?si=HzP06TgxCVITp6c9)
 
@@ -57,4 +55,4 @@ An old deepmind paper with a good concept and results, but i don't think this ap
 ## [RCAN](https://arxiv.org/abs/1807.02758)
 Using channel attention in a superresolution network.
 
-But then ViTs came, people started tokenizing images and getting better results. There is [HAT](https://arxiv.org/abs/2309.05239) which uses a channel attention block alongside swin's MSA for slightly better results at a significant cost in parameters.
+After all this ViTs came, people started tokenizing images and getting better results. There is [HAT](https://arxiv.org/abs/2309.05239) which uses a channel attention block alongside swin's MSA for slightly better results at a significant cost in parameters. I will probably write about ViTs in a separate post

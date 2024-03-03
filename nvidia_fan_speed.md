@@ -6,7 +6,7 @@ layout: default_blog
 
 # Manually setting fan speed on an ubuntu-server machine with no screen and multiple GPUs
 
-We were unhappy with the way default nvidia drivers handled fan speeds under load. The problem to solve was how to set the fan speeds on a **multi GPU ubuntu-server** machine with **no screen**, if you have a screen you can use the nvidia-settings GUI and be happy, otherwise this should work hopefully
+We were unhappy with the way default nvidia drivers handled fan speeds under load. The problem to solve was how to set the fan speeds on a multi GPU ubuntu-server machine with no screen, if you have a screen you can use the nvidia-settings GUI and be happy, otherwise this should work hopefully
 
 Using a combination of [arch linux wiki](https://wiki.archlinux.org/title/NVIDIA/Tips_and_tricks) and [cryptocurrency mining blogs](https://blockonomi.com/linux-cryptocurrency-mining/) i have arrived at a local optimum which i consider good enough. The speeds are static. # TODO: make them dynamic :), 1 idea is to have a script that emulates a fan curve.
 
