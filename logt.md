@@ -4,7 +4,8 @@ layout: default_blog
 title: LoGT
 ---
 
-[Home](./index.html) / [Research](./research.html)
+[Home](./index.html) / [Research](./research.html) / [Blog](./blog_index.html)
+
 
 
 - [Line Over Ground Truth loss](#line-over-ground-truth-loss)

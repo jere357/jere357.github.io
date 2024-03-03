@@ -1,6 +1,7 @@
 ---
 layout: default_blog
 ---
+[Home](./) / [Blog](./blog_index.html)
 
 
 # Attention 

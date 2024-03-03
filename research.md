@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-[Home](./)
+[Home](./index.html) / [Blog](./blog_index.html)
 
 
 # My "research" 

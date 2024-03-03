@@ -2,7 +2,7 @@
 layout: default_blog
 ---
 
-[Home](./)
+[Home](./) / [Blog](./blog_index.html)
 # Hobby projects
 
 In this document, I showcase several projects that I made in my free time, 2 of them were parts of huggingface sprints which are awesome events i suggest you to check them out

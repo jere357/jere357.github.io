@@ -1,7 +1,7 @@
 ---
 layout: default_blog
 ---
-[Home](./)
+[Home](./) / [Blog](./blog_index.html)
 
 # University projects w/ deep learning
 

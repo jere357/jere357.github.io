@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-[home](./)
+[Home](./)
 
 
 ## Blog index
