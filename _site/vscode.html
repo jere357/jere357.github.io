@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<html lang="en-US">
+  <head>
+    <title>
+      Jere's web
+    </title>
+    <link rel="icon" type="image/x-icon" href="/assets/img/pinky.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Figure 1. Jeronim with his 1070TI GPU, that has fans from aliexpress that don’t really fit so he has to reapply the duct tape every now and then." />
+<meta property="og:description" content="Figure 1. Jeronim with his 1070TI GPU, that has fans from aliexpress that don’t really fit so he has to reapply the duct tape every now and then." />
+<link rel="canonical" href="http://localhost:4000/vscode.html" />
+<meta property="og:url" content="http://localhost:4000/vscode.html" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Figure 1. Jeronim with his 1070TI GPU, that has fans from aliexpress that don’t really fit so he has to reapply the duct tape every now and then.","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/ja.jpeg"}},"url":"http://localhost:4000/vscode.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style2.css?v=">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+    
+    <!-- for mathjax support -->
+    
+    
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+    
+    <style>
+      /* Dark mode styles */
+      body.dark-mode {
+        background-color: #222; /* Dark background color */
+        color: #ccc; /* Light text color */
+      }
+
+
+      body.dark-mode p, 
+      body.dark-mode a,
+      body.dark-mode h1,
+      body.dark-mode h2,
+      body.dark-mode h3 {
+        color: #ccc; /* Text color for paragraphs, links, h1, and h3 */
+      }
+
+      /* Set color for links */
+      body.dark-mode a {
+    color: rgba(96, 138, 230, 0.795); /* Set link color to blue */
+  }
+    </style>
+  </head>
+  <body class="dark-mode">
+    <div class="wrapper">
+      <section>
+        <p><a href="./index.html">Home</a> / <a href="./blog_index.html">Blog</a></p>
+
+<h1 id="a-cool-vscode-extension-for-computer-vision-workflows">A cool VSCode extension for computer vision workflows</h1>
+
+<p>Basically, this entire blogpost is about a vscode extension for viewing images while in debug mode. I would often find myself drawing things on images and wondering what certain images in variables looked during debugging.</p>
+
+<p><a href="https://marketplace.visualstudio.com/items?itemName=076923.python-image-preview">Python Image Preview</a> this extension does exactly what I wanted.
+It allows you to view images in vscode while in debug mode. It supports torch tensors, cv2 images and PIL images.</p>
+
+<h2 id="how-it-looks-like">How it looks like</h2>
+
+<p><img src="assets/img/vscode1.png" alt="image" width="80%" /></p>
+
+<p><em>This photo shows the extension displaying a cv2 image.</em></p>
+
+<p>Then we draw a circle on the cv2 image convert it to a torch.Tensor and stack in on another image</p>
+
+<p><img src="assets/img/vscode2.png" alt="image" width="80%" /></p>
+
+<p><em>This photo shows the extension displaying a Tensor image.</em></p>
+
+<p>That’s it, that’s the entire blogpost. I hope you found this useful, and this helps you while working with images.</p>
+
+<h2 id="bonus-vscode-for-debugging-neural-networks">Bonus vscode for debugging neural networks</h2>
+
+<p>I also like keeping track of tensor shapes while debugging my networks, you can also do that so you know what you’re dealing with every line of the code.</p>
+
+<p>I also like this approach when im experimenting with a new architecture, breakpoint every line of code in the forward pass and just track the shapes from one line to another, makes it much easier to understand what’s going on, especially when the source code doesn’t have tensor shapes as comments :)</p>
+
+<p><img src="assets/img/vscode3.jpg" alt="image" width="60%" /></p>
+
+<p><a href="./">back</a></p>
+
+      </section>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+  </body>
+</html>

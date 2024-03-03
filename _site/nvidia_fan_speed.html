@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<html lang="en-US">
+  <head>
+    <title>
+      Jere's web
+    </title>
+    <link rel="icon" type="image/x-icon" href="/assets/img/pinky.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Figure 1. Jeronim with his 1070TI GPU, that has fans from aliexpress that don’t really fit so he has to reapply the duct tape every now and then." />
+<meta property="og:description" content="Figure 1. Jeronim with his 1070TI GPU, that has fans from aliexpress that don’t really fit so he has to reapply the duct tape every now and then." />
+<link rel="canonical" href="http://localhost:4000/nvidia_fan_speed.html" />
+<meta property="og:url" content="http://localhost:4000/nvidia_fan_speed.html" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Figure 1. Jeronim with his 1070TI GPU, that has fans from aliexpress that don’t really fit so he has to reapply the duct tape every now and then.","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/ja.jpeg"}},"url":"http://localhost:4000/nvidia_fan_speed.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style2.css?v=">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+    
+    <!-- for mathjax support -->
+    
+    
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+    
+    <style>
+      /* Dark mode styles */
+      body.dark-mode {
+        background-color: #222; /* Dark background color */
+        color: #ccc; /* Light text color */
+      }
+
+
+      body.dark-mode p, 
+      body.dark-mode a,
+      body.dark-mode h1,
+      body.dark-mode h2,
+      body.dark-mode h3 {
+        color: #ccc; /* Text color for paragraphs, links, h1, and h3 */
+      }
+
+      /* Set color for links */
+      body.dark-mode a {
+    color: rgba(96, 138, 230, 0.795); /* Set link color to blue */
+  }
+    </style>
+  </head>
+  <body class="dark-mode">
+    <div class="wrapper">
+      <section>
+        <p><a href="./index.html">Home</a> / <a href="./blog_index.html">Blog</a></p>
+
+<h1 id="manually-setting-fan-speed-on-an-ubuntu-server-machine-with-no-screen-and-multiple-gpus">Manually setting fan speed on an ubuntu-server machine with no screen and multiple GPUs</h1>
+
+<p>We were unhappy with the way default nvidia drivers handled fan speeds under load. The problem to solve was how to set the fan speeds on a <strong>multi GPU ubuntu-server</strong> machine with <strong>no screen</strong>, if you have a screen you can use the nvidia-settings GUI and be happy, otherwise this should work hopefully</p>
+
+<p>Using a combination of <a href="https://wiki.archlinux.org/title/NVIDIA/Tips_and_tricks">arch linux wiki</a> and <a href="https://blockonomi.com/linux-cryptocurrency-mining/">cryptocurrency mining blogs</a> i have arrived at a local optimum which i consider good enough. The speeds are static. # TODO: make them dynamic :), 1 idea is to have a script that emulates a fan curve.</p>
+
+<h2 id="cast-these-spells-in-this-order">Cast these spells in this order:</h2>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>nvidia-xconfig <span class="nt">-a</span> <span class="nt">--cool-bits</span><span class="o">=</span>4 <span class="nt">--allow-empty-initial-configuration</span> <span class="nt">--enable-all-gpus</span>
+</code></pre></div></div>
+
+<p>my understanding is the –allow-empty-initial-configuration helps with the no-screen problem, and –enable-all-gpus is <strong>essential</strong> if you have more than one GPU, the cool-bits flags is needed for manual adjustment of fan speeds.</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shutdown <span class="nt">-r</span> now
+</code></pre></div></div>
+
+<p>after rebooting</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>su root
+</code></pre></div></div>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>X :1 &amp;
+</code></pre></div></div>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">DISPLAY</span><span class="o">=</span>:1
+</code></pre></div></div>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nvidia-settings <span class="nt">-a</span> <span class="s2">"[gpu:0]/GPUFanControlState=1"</span> <span class="nt">-a</span> <span class="s2">"[fan:0]/GPUTargetFanSpeed=80"</span> <span class="nt">-a</span> <span class="s2">"[gpu:1]/GPUFanControlState=1"</span> <span class="nt">-a</span> <span class="s2">"[fan:1]/GPUTargetFanSpeed=85"</span> <span class="nt">-a</span> <span class="s2">"[gpu:2]/GPUFanControlState=1"</span> <span class="nt">-a</span> <span class="s2">"[fan:2]/GPUTargetFanSpeed=80"</span>
+</code></pre></div></div>
+
+<p>exit root back to your user</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">exit</span>
+</code></pre></div></div>
+
+<p>Pay attention to how the fans are indexed!!</p>
+
+<p>wrong way to do this:
+gpu:0/fan:0 gpu:1/fan:0</p>
+
+<p>correct way to do this:
+gpu:0/fan:0 gpu:1/fan:1</p>
+
+<p><a href="./">back</a></p>
+
+      </section>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+  </body>
+</html>

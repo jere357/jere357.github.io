@@ -7,34 +7,48 @@ layout: default_blog
 
 # Generating Livaja with a champion's league trophy using dreambooth.
 
-It was another 2nd place finish in the national league, i just wanted to see my favorite player holding the champions league trophy. 
+Another 2nd place finish in the national league, maybe it was time to replace the coach. I just wanted to see my favorite player holding the champions league trophy.
+replace
+This project started as an idea to see wether it was possible to finetune a stable diffusion model so it could generate Marko Livaja holding the champions league trophy.
 
-This project started as an idea to see wether it was possible to finetune a stable diffusion model so it could generate a soccer player holding he champions league trophy.
-
-First i wanted to see what does stable diffusion know about SOCCER players, football players would be generated as american football players indicating a regional bias in the annotations. And whether it knows what the UEFA champion's league trophy looks like.
-
-
-## obcnmi stable diffusion rezultati
- 
-soccer player
-soccer player holding a trophy
-uefa champions league trophy
-
-These results were a good enough starting points for my dreambooth journey.
-The questions was: Can the model learn both Marko Livaja and the UCL trophy, and how?
-Initial experiments with the basic dreambooth instance/class prompts such as "photo of a sks soccer player" and "photo of a soccer player" weren't good enough
-
-## obicni dataset eskpaci
-
-I went on a mission to create a dataset of ~250 images containing player holding the trophy. They are going to be used as class images in the dataset where the class is "a soccer player holding a UEFA champion's league trophy". The instance prompt inm this case would be "a sks soccer player with no trophy". These 2 prompts combined with the enw dataset yielded pretty good results! THen i went to see which baseline stable diffusion model i liked the most for this task, it was stabilityAI2.0 
-
-## runwayml/stabilitai/compvis
+First i wanted to see what does stable diffusion know about SOCCER players, football players would be generated as american football players indicating a regional bias in the annotations. And whether it knows what the UEFA champion's league trophy looks like. Also there was the question of which baseline model should i finetune, compvis1.4, runway1.5 or the stability2.1
 
 
-Since this was my first time running things on stable diffusion models i wanted to see for how much of a difference things like schedulers, num_steps and varations in the prompts made.
+1 slika - photo of a soccer player 3 modela
 
-## differente schedulers
+1 slika - champion league trophy 3 modela
 
+
+These results were okay enough to start my dreambooth journey. What i wanted to do was a bit different from the usual dreambooth subject/class pairing since the model doenst know what the UCL trophy looks like. Can the model learn both Marko Livaja and the UCL trophy, and how?
+
+
+## Most important part of ML: The data
+
+I went on a mission to create a dataset of ~250 images containing player holding the trophy. The usual dreambooth dataset for generating people needs ~20 instance images of the person and 10x class images. After gathering the data. I have 24 images of Marko Livaja (all wearing the same home jersey) and 242 images of various players holding the UCL trophy. 
+
+
+# One weird prompt trick
+
+First i ran some experiments with the usual dreambooth prompt pairings: "a photo of a sks soccer player" and "a photo of a soccer player", but the results were not good enough. I wanted to see if i could use the class prompt to my advantage. The new class prompt was "a soccer player holding a trophy".
+
+1 slika -3 razlicita prompta na stability ai modelu
+
+
+# Which baseline
+
+I had to choose on of the 3 baseline models, so i ran 3 experiments with different models to see how they behave after dreambooth tuning. The results were not that different, but i like the stabilityai results the most.
+
+1 slika - 3 razlicita baseline modela stability/compvis/runway
+
+
+# How much does changing the PLR matter for the results
+
+1 slika - 3 stability modela na razlicitin PLR
+
+
+## differente schedulers ?
+
+## SDXL refiner ? 
 
 ## does 'a photo of' part of the prompt even do anything?
 

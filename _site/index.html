@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-
   <head>
     <title>
       Jere's web
@@ -10,8 +8,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!-- Begin Jekyll SEO tag v2.8.0 -->
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.2" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Figure 1. Jeronim with his 1070TI GPU, that has fans from aliexpress that don’t really fit so he has to reapply the duct tape every now and then." />
@@ -44,8 +41,37 @@
 
 <!-- end custom head snippets -->
 
-  </head>
-  <body>
+    <style>
+      /* Dark mode styles */
+      body.dark-mode {
+        background-color: #222; /* Dark background color */
+        color: #ccc; /* Light text color */
+      }
+      body.dark-mode header {
+        /* Remove specific color definition for header to inherit from body */
+        /* background-color: #333; */
+      }
+      body.dark-mode p, 
+      body.dark-mode a,
+      body.dark-mode h1,
+      body.dark-mode h2,
+      body.dark-mode h3 {
+        color: #ccc; /* Text color for paragraphs, links, h1, and h3 */
+      }
+      /* Adjust sidebar colors */
+      body.dark-mode .downloads li a {
+        color: #ccc; /* Text color for sidebar links */
+      }
+      body.dark-mode .downloads li a:hover {
+        color: #fff; /* Text color for sidebar links on hover */
+      }
+        /* Set color for links */
+  body.dark-mode a {
+    color: rgba(96, 138, 230, 0.795); /* Set link color to blue */
+  }
+    </style>
+      </head>
+  <body class="dark-mode">
     <div class="wrapper">
       <header>
         
@@ -90,40 +116,34 @@
 
       <h1 id="hello-there-i-am-jeronim-matijević">Hello there, I am Jeronim Matijević</h1>
 
-<p>I’m a Graduate student at the University of Zagreb, Faculty of Electrical Engineering and Computing. Currently enrolled in the Computer Science MSc programme, advised by Sven Lončarić. Passionate about neural networks for all purposes.</p>
+<p>I am currently working as a research engineer at <a href="https://tensorpix.ai/">tensorpix.</a> We are developing models for video superresolution and video restoration.
+How it feels when your multiple discriminator GAN doen’t diverge into NaNs: <a href="./assets/img/muaddib.jpg">me</a></p>
 
-<p>The reason why I created this website is because all the projects listed in my CV were bloating it too much, and I felt that people would skip over it without reading anything. + ngl i always wanted to have a tumblr so i guess this is something like it</p>
+<p>I consider computer vision my main field of interest. I have read papers on its subfields such as image/video restoration, object detection, depth estimation, neural radiance fields and GANs</p>
 
-<p>Generally I find models bridging the gap between natural language processing and computer vision fascinating. I’m thrilled to see what we will do with CLIP embeddings in the future.</p>
-
-<hr />
-
-<h2 id="fields-of-interest">Fields of interest</h2>
-
-<ul>
-  <li>Computer vision</li>
-  <li>Generative models [<a href="https://docs.google.com/presentation/d/1mnwzmGJhGYygE8rrRK8feUJd4PdzHKAE7OLm78Gbfvs/edit?usp=sharing">0</a>]</li>
-  <li>Neural radiance fields [<a href="https://docs.google.com/presentation/d/1oIZTKTSz7aFHnwCLi9jz3cN3LDLKccZiHjNuqeD-yYs/edit?usp=sharing">1</a>]</li>
-  <li>Depth estimation</li>
-</ul>
+<p>Big fan of CLIP</p>
 
 <hr />
 
-<h1 id="my-projects">My projects</h1>
+<h1 id="my-ml-blog">My ML blog</h1>
 
-<p>I have divided my projects into ones i have done during for my education and ones i have done in my free time + things i want to research</p>
+<p>On the link below you can find my ML blog + short comments on various deep learning projects i have done over the years, reach out about anything if you have any questions</p>
 
-<ol>
-  <li>
-    <p><a href="./research.html">Some of my still unfinished research</a></p>
-  </li>
-  <li>
-    <p><a href="./hobby_projects.html">Deep learning hobby projects</a>.</p>
-  </li>
-  <li>
-    <p><a href="./university_projects.html">Short overview of my Deep Learning university projects</a>.</p>
-  </li>
-</ol>
+<h2 id="blog"><a href="./blog_index.html">Blog</a></h2>
+
+<hr />
+
+<h1 id="slides">Slides</h1>
+<p>I sometimes talk about ML papers, 
+If i told you you can find the slides on my site, here they are. Most of these, but not all are from our paperclub</p>
+
+<p><a href="https://docs.google.com/presentation/d/1oIZTKTSz7aFHnwCLi9jz3cN3LDLKccZiHjNuqeD-yYs/edit?usp=sharing">wtF are NeRFs?</a> Shoutout to prof. Šegvić for letting me hold this “seminar” for the Deep Learning 1 course</p>
+
+<p><a href="https://docs.google.com/presentation/d/1LE92h1_r6c-MgxlPfZHtqVNlU3oj63pJTSHLOPNw_DU/edit?usp=sharing">Masked Autoencoders</a></p>
+
+<p><a href="https://docs.google.com/presentation/d/1o908FlzGE0InSQPqUMgLarzujLVEp5lXjuq4qggCKsE/edit?usp=sharing">Lottery ticket hypothesis, but actually the Han et al. pruning paper</a></p>
+
+<p><a href="https://docs.google.com/presentation/d/1mnwzmGJhGYygE8rrRK8feUJd4PdzHKAE7OLm78Gbfvs/edit?usp=sharing">Dreambooth</a></p>
 
 <hr />
 <p><br /></p>
@@ -140,7 +160,6 @@
   <li><a href="https://karpathy.github.io/2015/05/21/rnn-effectiveness/" width="50%">Must read Karpathy blog on RNNs</a></li>
   <li><a href="https://karpathy.ai/zero-to-hero.html" width="50%">Zero to Hero Karpathy videos</a></li>
   <li><a href="https://lossfunctions.tumblr.com/" width="50%">Funny loss functions blog</a></li>
-  <li><a href="https://oneweirdkerneltrick.com/" width="50%">Very important research</a></li>
   <li><a href="https://timdettmers.com/2023/01/30/which-gpu-for-deep-learning/" width="50%">Comparisons of recent nvidia GPUs for deep learning</a></li>
   <li><a href="https://www.microway.com/hpc-tech-tips/nvidia-smi_control-your-gpus/" width="50%">nvidia-smi blogpost</a></li>
   <li><a href="https://ppwwyyxx.com/blog/2022/Demystify-RAM-Usage-in-Multiprocess-DataLoader/">blogpost about demystifying RAM usage in multiprocess pytorch dataloaders</a></li>
@@ -149,20 +168,17 @@
 
 <p><br /></p>
 
-<h2 id="coolfunny-things-on-the-internet">Cool/funny things on the internet</h2>
+<h2 id="misc-stuff-on-the-internet">misc stuff on the internet</h2>
 
 <ul>
-  <li><a href="https://twitch.tv/watchmeforever">Watchmeforever AI generated TV show</a></li>
-  <li><a href="https://youtu.be/7VHG6Y2QmtM">Video about about big O definition and speed vs memory tradeoff + some rust propaganda</a></li>
-  <li><a href="https://gist.github.com/coolaj86/6f4f7b30129b0251f61fa7baaa881516">DAN adversarial attacks on chatGPT</a></li>
   <li><a href="https://www.manim.community/">manim</a> - very cool library for math visualization, used by 3blue1brown</li>
-  <li><a href="http://blog.ezyang.com/">ezyang blog</a></li>
+  <li><a href="https://dingboard.com/">dingboard</a></li>
   <li><a href="https://jspaint.app">jspaint</a></li>
+  <li><a href="https://oneweirdkerneltrick.com/" width="50%">Very important research</a></li>
   <li><a href="https://www.vaisko.com">Vaisko</a></li>
   <li><a href="https://smile.rip/">Smile.rip</a></li>
   <li><a href="http://marulianus.hr">marulianus.hr</a></li>
   <li><a href="https://youtu.be/WSCm8yAxBr8">Auralnauts</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Seppo_Linnainmaa">Seppo Linnainmaa wikipedia page</a> - this guy implemented backprop in fortran in 1970 as his msc thesis</li>
   <li><a href="https://instagram.com/programemezzz">programemezzz</a></li>
   <li><a href="/assets/img/mrfantastic.png">How i sometimes feel about ML research</a></li>
   <li><a href="https://youtu.be/9kaIXkImCAM">Have you tried using ffmpeg?</a></li>
@@ -175,6 +191,7 @@
 
 <ul>
   <li>To own a small boat</li>
+  <li>Hold a computer vision course at Kopilica</li>
 </ul>
 
 

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-
+<html lang="{{ site.lang | default: "en-US" }}">
   <head>
     <title>
       Jere's web
@@ -10,20 +9,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-{% seo %}
+    {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style2.css?v=" | append: site.github.build_revision | relative_url }}">
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
     {% include head-custom.html %}
+    
+    <style>
+      /* Dark mode styles */
+      body.dark-mode {
+        background-color: #222; /* Dark background color */
+        color: #ccc; /* Light text color */
+      }
+
+
+      body.dark-mode p, 
+      body.dark-mode a,
+      body.dark-mode h1,
+      body.dark-mode h2,
+      body.dark-mode h3 {
+        color: #ccc; /* Text color for paragraphs, links, h1, and h3 */
+      }
+
+      /* Set color for links */
+      body.dark-mode a {
+    color: rgba(96, 138, 230, 0.795); /* Set link color to blue */
+  }
+    </style>
   </head>
-  <body>
+  <body class="dark-mode">
     <div class="wrapper">
       <section>
-
-      {{ content }}
-
+        {{ content }}
       </section>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
