@@ -27,7 +27,7 @@ On the link below you can find my ML blog + short comments on various deep learn
 I sometimes talk about ML papers, 
 If i told you you can find the slides on my site, here they are. Most of these, but not all are from our paperclub
 
-[wtF are NeRFs?](https://docs.google.com/presentation/d/1oIZTKTSz7aFHnwCLi9jz3cN3LDLKccZiHjNuqeD-yYs/edit?usp=sharing) Shoutout to prof. Šegvić for letting me hold this "seminar" for the Deep Learning 1 course
+[wtF are NeRFs?](https://docs.google.com/presentation/d/1oIZTKTSz7aFHnwCLi9jz3cN3LDLKccZiHjNuqeD-yYs/edit?usp=sharing)
 
 [Masked Autoencoders](https://docs.google.com/presentation/d/1LE92h1_r6c-MgxlPfZHtqVNlU3oj63pJTSHLOPNw_DU/edit?usp=sharing)
 
