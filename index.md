@@ -22,16 +22,17 @@ On the link below you can find my ML blog + short comments on various deep learn
 * * *
 
 # Slides 
-I sometimes talk about ML papers, 
-If i told you you can find the slides on my site, here they are. Most of these, but not all are from our paperclub
+I sometimes talk about ML papers. If i told you you can find the slides on my site, here they are. Most of these, but not all are from our paperclub
+
+[Patch n’ Pack: NaViT, a Vision Transformer for any Aspect Ratio and Resolution](https://docs.google.com/presentation/d/12hIt-pyaQhsy7uO6EfFKp7XDIXLC1pZ2xT65XscX-38/edit?usp=sharing)
 
 [wtF are NeRFs?](https://docs.google.com/presentation/d/1oIZTKTSz7aFHnwCLi9jz3cN3LDLKccZiHjNuqeD-yYs/edit?usp=sharing)
-
-[Masked Autoencoders](https://docs.google.com/presentation/d/1LE92h1_r6c-MgxlPfZHtqVNlU3oj63pJTSHLOPNw_DU/edit?usp=sharing)
 
 [Lottery ticket hypothesis, but actually the Han et al. pruning paper](https://docs.google.com/presentation/d/1o908FlzGE0InSQPqUMgLarzujLVEp5lXjuq4qggCKsE/edit?usp=sharing)
 
 [Dreambooth](https://docs.google.com/presentation/d/1mnwzmGJhGYygE8rrRK8feUJd4PdzHKAE7OLm78Gbfvs/edit?usp=sharing)
+
+[Masked Autoencoders](https://docs.google.com/presentation/d/1LE92h1_r6c-MgxlPfZHtqVNlU3oj63pJTSHLOPNw_DU/edit?usp=sharing)
 
 * * *
 <br>
