@@ -37,7 +37,7 @@ export DISPLAY=:1
 ```
 
 ```sh
-nvidia-settings -a "[gpu:0]/GPUFanControlState=1" -a "[fan:0]/GPUTargetFanSpeed=80" -a "[gpu:1]/GPUFanControlState=1" -a "[fan:1]/GPUTargetFanSpeed=85" -a "[gpu:2]/GPUFanControlState=1" -a "[fan:2]/GPUTargetFanSpeed=80"
+nvidia-settings -a "[gpu:0]/GPUFanControlState=1" -a "[fan:0]/GPUTargetFanSpeed=75" -a "[gpu:1]/GPUFanControlState=1" -a "[fan:1]/GPUTargetFanSpeed=75" -a "[gpu:2]/GPUFanControlState=1" -a "[fan:2]/GPUTargetFanSpeed=75" -a "[gpu:3]/GPUFanControlState=1" -a "[fan:3]/GPUTargetFanSpeed=75""
 ```
 
 exit root back to your user
