@@ -26,6 +26,8 @@ I sometimes talk about ML papers. If i told you you can find the slides on my si
 
 [Scalable Diffusion Models with Transformers](https://docs.google.com/presentation/d/1bCiwA0i3xxZHzfcfa4xZ_ucZLB-g0UgMOdkIkirgkX8/edit?usp=sharing)
 
+[FreeU : Free Lunch in Diffusion U-Net](https://docs.google.com/presentation/d/14Xl68rPJup2o461CtpiDwWgRvmkinzXZz1Z7TF5m_Nc/edit?usp=sharing)
+
 [Are we done with Imagenet?](https://docs.google.com/presentation/d/119arKlu708UpmQCK3TaGVnu4mwoyDIVPF6DLDVlAJt8/edit?usp=sharing)
 
 [Patch n’ Pack: NaViT, a Vision Transformer for any Aspect Ratio and Resolution](https://docs.google.com/presentation/d/12hIt-pyaQhsy7uO6EfFKp7XDIXLC1pZ2xT65XscX-38/edit?usp=sharing)
