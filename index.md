@@ -30,6 +30,8 @@ I sometimes talk about ML papers. If i told you you can find the slides on my si
 
 [Are we done with Imagenet?](https://docs.google.com/presentation/d/119arKlu708UpmQCK3TaGVnu4mwoyDIVPF6DLDVlAJt8/edit?usp=sharing)
 
+[EMO: Emote Portrait Alive](https://docs.google.com/presentation/d/1GAXjvOGJ3H7kQy-B2FDMQd09vNKVpQ1LBxqDBAEGxFU/edit?usp=sharing)
+
 [Patch n’ Pack: NaViT, a Vision Transformer for any Aspect Ratio and Resolution](https://docs.google.com/presentation/d/12hIt-pyaQhsy7uO6EfFKp7XDIXLC1pZ2xT65XscX-38/edit?usp=sharing)
 
 [wtF are NeRFs?](https://docs.google.com/presentation/d/1oIZTKTSz7aFHnwCLi9jz3cN3LDLKccZiHjNuqeD-yYs/edit?usp=sharing)
