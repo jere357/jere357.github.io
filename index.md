@@ -28,13 +28,15 @@ I sometimes talk about ML papers. If i told you you can find the slides on my si
 
 [FreeU : Free Lunch in Diffusion U-Net](https://docs.google.com/presentation/d/14Xl68rPJup2o461CtpiDwWgRvmkinzXZz1Z7TF5m_Nc/edit?usp=sharing)
 
-[Are we done with Imagenet?](https://docs.google.com/presentation/d/119arKlu708UpmQCK3TaGVnu4mwoyDIVPF6DLDVlAJt8/edit?usp=sharing)
-
-[EMO: Emote Portrait Alive](https://docs.google.com/presentation/d/1GAXjvOGJ3H7kQy-B2FDMQd09vNKVpQ1LBxqDBAEGxFU/edit?usp=sharing)
-
 [Patch n’ Pack: NaViT, a Vision Transformer for any Aspect Ratio and Resolution](https://docs.google.com/presentation/d/12hIt-pyaQhsy7uO6EfFKp7XDIXLC1pZ2xT65XscX-38/edit?usp=sharing)
 
 [wtF are NeRFs?](https://docs.google.com/presentation/d/1oIZTKTSz7aFHnwCLi9jz3cN3LDLKccZiHjNuqeD-yYs/edit?usp=sharing)
+
+[Are we done with Imagenet?](https://docs.google.com/presentation/d/119arKlu708UpmQCK3TaGVnu4mwoyDIVPF6DLDVlAJt8/edit?usp=sharing)
+
+[Demystifying CLIP Data](https://docs.google.com/presentation/d/1koXM_Y52CNNWPI7c6naL9gwoPqvV-IHa22kMN3LavV0/edit?usp=sharing)
+
+[EMO: Emote Portrait Alive](https://docs.google.com/presentation/d/1GAXjvOGJ3H7kQy-B2FDMQd09vNKVpQ1LBxqDBAEGxFU/edit?usp=sharing)
 
 [Lottery ticket hypothesis, but actually the Han et al. pruning paper](https://docs.google.com/presentation/d/1o908FlzGE0InSQPqUMgLarzujLVEp5lXjuq4qggCKsE/edit?usp=sharing)
 
