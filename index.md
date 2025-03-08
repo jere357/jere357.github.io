@@ -4,19 +4,20 @@ layout: default
 
 # Hello there, I am Jeronim Matijević
 
-I am currently working as a research engineer at [tensorpix.](https://tensorpix.ai/) We are developing models for video superresolution and video restoration.
-How it feels when your multiple discriminator GAN doen't diverge into NaNs: [me](./assets/img/muaddib.jpg)
+I'm currently koding at a company called Intis
 
 
 Big fan of CLIP
 
+
+backprop is the closest thing we have to magic
+
+
 * * *
 
-# My ML blog 
+# [My ML Blog](./blog_index.html)
 
-On the link below you can find my ML blog + short comments on various deep learning projects i have done over the years, reach out about anything if you have any questions
-
-## [Blog](./blog_index.html)
+On the link above you can find my ML blog + short comments on various deep learning projects i have done over the years, reach out about anything if you have any questions
 
 
 * * *
