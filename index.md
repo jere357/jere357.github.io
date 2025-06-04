@@ -26,9 +26,12 @@ I sometimes talk about ML papers. If i told you you can find the slides on my si
 
 [FreeU : Free Lunch in Diffusion U-Net](https://docs.google.com/presentation/d/14Xl68rPJup2o461CtpiDwWgRvmkinzXZz1Z7TF5m_Nc/edit?usp=sharing)
 
-[On Layer Normalization in the Transformer arch](https://docs.google.com/presentation/d/1DHuV7Pl2xt8QaAEdtg3i8rQOek955NXLehNNdG90q3s/edit?usp=sharing)
 
 [Patch n’ Pack: NaViT, a Vision Transformer for any Aspect Ratio and Resolution](https://docs.google.com/presentation/d/12hIt-pyaQhsy7uO6EfFKp7XDIXLC1pZ2xT65XscX-38/edit?usp=sharing)
+
+[On Layer Normalization in the Transformer arch](https://docs.google.com/presentation/d/1DHuV7Pl2xt8QaAEdtg3i8rQOek955NXLehNNdG90q3s/edit?usp=sharing)
+
+[Sigmoid Loss for Language Image Pre-Training](https://docs.google.com/presentation/d/1R59ojLYC4cEID0DN9mfshcYR0sJa9wNwbTtljCX6_Hw/edit?usp=sharing)
 
 [wtF are NeRFs?](https://docs.google.com/presentation/d/1oIZTKTSz7aFHnwCLi9jz3cN3LDLKccZiHjNuqeD-yYs/edit?usp=sharing)
 
