@@ -26,6 +26,7 @@ I sometimes talk about ML papers. If i told you you can find the slides on my si
 
 [FreeU : Free Lunch in Diffusion U-Net](https://docs.google.com/presentation/d/14Xl68rPJup2o461CtpiDwWgRvmkinzXZz1Z7TF5m_Nc/edit?usp=sharing)
 
+[SIGLIP2](https://docs.google.com/presentation/d/1L-kZ2orTdKOQeEVIoLWHOwjJqJf3LbAOCwb9Vw_DujY/edit?usp=sharing)
 
 [Patch n’ Pack: NaViT, a Vision Transformer for any Aspect Ratio and Resolution](https://docs.google.com/presentation/d/12hIt-pyaQhsy7uO6EfFKp7XDIXLC1pZ2xT65XscX-38/edit?usp=sharing)
 
