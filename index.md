@@ -7,7 +7,7 @@ layout: default
 I'm a biological encoder+decoder w/ skip connections, currently koding at a company called Intis
 
 
-Big fan of CLIP
+Big fan of siglip2
 
 
 * * *
